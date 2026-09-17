@@ -1,7 +1,7 @@
 {
  "schemaVersion": 2,
  "snapshotDate": "2026-09-17",
- "generatedAt": "2026-09-17T23:02:12Z",
+ "generatedAt": "2026-09-17T23:09:04Z",
  "provenance": "Derived aggregate snapshot. Each entry is a reference level statistic (count, median, range, date span) computed by us from our own compiled record of sold and asking observations, not individual listing rows. Refreshed nightly by refresh_comps.py and served from our own static host. Displayed figures carry no third party attribution.",
  "displayDecision": "The displayed aggregates are our own compiled record, shown as our own derived statistics under Christopher's 2026-09-17 directive to ship comps from what we hold. Direct eBay sold-data access is an application in progress. No eBay attributed statistic is displayed.",
  "sources": [
