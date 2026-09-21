@@ -28,8 +28,20 @@ listing page they are viewing and, with a licence, comparable prices for the ref
   stored locally in your browser using Chrome's local extension storage. They stay on your computer
   and are not uploaded anywhere.</li>
   <li><strong>Your licence key.</strong> If you buy the paid unlock, the extension sends the licence
-  key to Gumroad, and only to Gumroad, to check that the key is valid. That is the only thing the
-  extension ever sends off your machine, and it is sent only when the key is entered or re-checked.</li>
+  key to Gumroad, and only to Gumroad, to check that the key is valid. That is sent only when the key
+  is entered or re-checked.</li>
+  <li><strong>The comps file.</strong> With the paid unlock, the extension reads a comparable prices
+  file from our own static host
+  (<code>https://assistantlloydlee.github.io/flip-ledger/comps.json</code>) so the figures stay
+  current. That is a plain read of a public file. No key, account, cookie or identifier of yours is
+  sent with it, and the file it reads holds only reference level statistics, never listing rows. A
+  copy is kept on your machine so the figures still work when the host cannot be reached.</li>
+  <li><strong>Listings you view.</strong> While the extension is on a listing page, it records that
+  listing as a comp observation on your own machine: the brand, model, reference, the asking price,
+  the day it was seen, the source site and the listing's own web address. This is disclosed here and
+  in the panel. It carries no account, no seller identity, no contact details and no browsing
+  history beyond the listing itself, and it never leaves your computer unless you choose to export
+  it.</li>
 </ul>
 
 <h2>What the extension does not do</h2>
@@ -38,8 +50,9 @@ listing page they are viewing and, with a licence, comparable prices for the ref
   <li>It does not read your cookies, your passwords or your accounts.</li>
   <li>It does not track you, and it does not show advertising.</li>
   <li>It does not sell, rent or share your data with anyone.</li>
-  <li>It makes no network request for the free features. The free margin tool works with the network
-  switched off.</li>
+  <li>It sends nothing off your machine for the free margin tool: that works with the network
+  switched off. The only two outbound calls in the whole product are the licence check you ask for
+  and the read of our own comps file, described above.</li>
 </ul>
 
 <h2>Where your data lives</h2>

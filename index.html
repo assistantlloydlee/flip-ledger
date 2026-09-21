@@ -3,24 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flip Ledger</title>
+<title>Flip Ledger: watch margin and fee calculator for eBay and Chrono24</title>
+<meta name="description" content="Free Chrome extension that shows the real margin on a watch listing page: landed cost, the full fee stack, net proceeds. Optional comps unlock.">
 <style>
-  :root { color-scheme: light dark; }
-  body { max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  h1 { font-size: 1.7rem; } a { color: inherit; }
+  :root { color-scheme: light dark; --muted: #6b7280; --line: #e5e7eb; }
+  @media (prefers-color-scheme: dark) { :root { --muted: #9ca3af; --line: #374151; } }
+  body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  .sub { color: var(--muted); margin-top: 0; }
+  .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin: 1.5rem 0 .5rem; }
+  .cta a { display: inline-block; padding: .7rem 1.1rem; border: 1px solid var(--line); border-radius: .5rem; text-decoration: none; font-weight: 600; }
+  .cta a.primary { background: #111; color: #fff; border-color: #111; }
+  @media (prefers-color-scheme: dark) { .cta a.primary { background: #fff; color: #111; border-color: #fff; } }
+  ul { padding-left: 1.15rem; } li { margin: .35rem 0; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: .5rem; margin: .5rem 0; }
+  footer { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
 </style>
 </head>
 <body>
 <h1>Flip Ledger</h1>
-<p>Real margin on a watch listing page: landed cost, the full fee stack, net proceeds.</p>
-<p>Flip Ledger is a Chrome extension for watch dealers. It reads the price on the listing page you
-already have open, applies the fee stack a dealer actually pays, and shows the real margin. With a
-licence it adds comparable sold prices for the reference, shown as a median with the sample count
-and the date span behind it.</p>
+<p class="sub">The real margin on a watch listing page: landed cost, the full fee stack, net proceeds.</p>
+
+<div class="cta">
+  <a class="primary" href="https://chromewebstore.google.com/detail/flip-ledger/cioaejkfgbfmmnjlfehooageelelfpec">Get it free on the Chrome Web Store</a>
+  <a href="https://lloydian818.gumroad.com/l/flip-ledger?utm_source=flip_ledger_site&amp;utm_medium=site&amp;utm_campaign=flip_ledger">Unlock comps (9 dollars once)</a>
+</div>
+<p class="muted">Free extension. One optional payment. No subscription, no account.</p>
+
+<h2>What it does</h2>
+<p>Open an eBay listing or a Chrono24 offer. Flip Ledger reads the price on screen, applies your own fee
+stack, and shows what the watch would actually leave you with, in the page, while you are deciding.</p>
+
+<h2>Free</h2>
 <ul>
-  <li><a href="./privacy.html">Privacy policy</a></li>
+  <li><strong>Landed cost, not the sticker price.</strong> Hammer or asking price, the auction buyer's premium through your own tier table (bands behave like tax brackets, with an open ended top band), shipping and insurance, import duty, service or repair, parts.</li>
+  <li><strong>The fee stack for eBay, Chrono24 and dealer to dealer</strong>, with a typed override for when your invoice disagrees with the default.</li>
+  <li><strong>Net proceeds and margin in the page</strong>, before you commit, not after.</li>
+  <li><strong>Consignment kept separate.</strong> The dealer's share and the consignor's amount are two numbers, never blended into one.</li>
+  <li><strong>Your own rates.</strong> Every rate and every tier is yours to set once, on the options page.</li>
 </ul>
-<p class="muted">This page is the extension's privacy policy page. The extension is distributed
-through the Chrome Web Store.</p>
+
+<h2>With a licence (9 dollars once)</h2>
+<ul>
+  <li><strong>Comps, automatic.</strong> Comparable sold prices for the reference, supplied for you. As of 21 September 2026 that is more than 1,200 sold reference level aggregates over 1,900 sold observations, across 21 brands, shown as a median with the sample count, the range and the date span behind it.</li>
+  <li><strong>Honest by construction.</strong> When we hold nothing for a reference, it says so plainly. Nothing is estimated. Asking prices are labelled as asking and are never dressed up as sold prices.</li>
+</ul>
+
+<h2>What it does not do</h2>
+<p>It does not buy, bid, list or sell anything for you. It does not touch your accounts, your cookies or
+your passwords. It reads the price on the listing page you are viewing.</p>
+
+<h2>Privacy, plainly</h2>
+<p>Your watches, sales, rates and observations stay on your computer. The free features make no network
+call at all. When you use the licensed comps, the extension reads our comps file from our own host, and it
+checks your licence key with Gumroad. Those two requests are the only network calls in the product. The
+licence request sends your key and nothing else. No browsing history is collected, no account is needed,
+and nothing about you is sold. <a href="./privacy.html">Full privacy policy</a>.</p>
+
+<h2>Who is selling this</h2>
+<p>The free extension is published by us, the developer, not by Google. The paid unlock is sold by us
+through Gumroad. Google is not the seller of anything here.</p>
+
+<h2>Refunds</h2>
+<p>If it is not useful to you, reply within 14 days and we refund the purchase in full. No form to fill in.</p>
+
+<footer>
+  <p class="muted">Flip Ledger is a Chrome extension for watch dealers and flippers. Support: reply to your
+  receipt, or use the support link on the store listing.</p>
+</footer>
 </body>
 </html>
