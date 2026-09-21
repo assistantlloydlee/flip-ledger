@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flip Ledger: watch margin and fee calculator for eBay and Chrono24</title>
-<meta name="description" content="Free Chrome extension that shows the real margin on a watch listing page: landed cost, the full fee stack, net proceeds. Optional comps unlock.">
+<title>Flip Ledger: real margin and fees on the watch listing page you're already on</title>
+<meta name="description" content="Free tier: the landed cost, the full fee stack, net proceeds and margin, in the page. The paid part adds the comps view, with the sample size shown.">
 <style>
   :root { color-scheme: light dark; --muted: #6b7280; --line: #e5e7eb; }
   @media (prefers-color-scheme: dark) { :root { --muted: #9ca3af; --line: #374151; } }
   body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   h1 { font-size: 1.9rem; margin-bottom: .25rem; }
   h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  .lead { font-size: 1.12rem; border-left: 3px solid var(--line); padding-left: 1rem; margin: 1.4rem 0; }
   .sub { color: var(--muted); margin-top: 0; }
   .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin: 1.5rem 0 .5rem; }
   .cta a { display: inline-block; padding: .7rem 1.1rem; border: 1px solid var(--line); border-radius: .5rem; text-decoration: none; font-weight: 600; }
@@ -18,25 +19,27 @@
   @media (prefers-color-scheme: dark) { .cta a.primary { background: #fff; color: #111; border-color: #fff; } }
   ul { padding-left: 1.15rem; } li { margin: .35rem 0; }
   .muted { color: var(--muted); font-size: .92rem; }
-  img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: .5rem; margin: .5rem 0; }
   footer { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
 </style>
 </head>
 <body>
 <h1>Flip Ledger</h1>
-<p class="sub">The real margin on a watch listing page: landed cost, the full fee stack, net proceeds.</p>
+<p class="sub">Real margin and fees on the watch listing page you're already on.</p>
+
+<p class="lead">The math is free. The $9 buys the one thing a spreadsheet can't do: what comparable
+pieces actually sold for, with the sample size shown.</p>
 
 <div class="cta">
   <a class="primary" href="https://chromewebstore.google.com/detail/flip-ledger/cioaejkfgbfmmnjlfehooageelelfpec">Get it free on the Chrome Web Store</a>
-  <a href="https://lloydian818.gumroad.com/l/flip-ledger?utm_source=flip_ledger_site&amp;utm_medium=site&amp;utm_campaign=flip_ledger">Unlock comps (9 dollars once)</a>
+  <a href="https://lloydian818.gumroad.com/l/flip-ledger?utm_source=flip_ledger_site&amp;utm_medium=site&amp;utm_campaign=flip_ledger">Add the comps view ($9 once)</a>
 </div>
-<p class="muted">Free extension. One optional payment. No subscription, no account.</p>
+<p class="muted">No subscription, no account. The free tier is a complete tool, permanently.</p>
 
 <h2>What it does</h2>
 <p>Open an eBay listing or a Chrono24 offer. Flip Ledger reads the price on screen, applies your own fee
 stack, and shows what the watch would actually leave you with, in the page, while you are deciding.</p>
 
-<h2>Free</h2>
+<h2>The free tier (complete, permanently)</h2>
 <ul>
   <li><strong>Landed cost, not the sticker price.</strong> Hammer or asking price, the auction buyer's premium through your own tier table (bands behave like tax brackets, with an open ended top band), shipping and insurance, import duty, service or repair, parts.</li>
   <li><strong>The fee stack for eBay, Chrono24 and dealer to dealer</strong>, with a typed override for when your invoice disagrees with the default.</li>
@@ -44,11 +47,16 @@ stack, and shows what the watch would actually leave you with, in the page, whil
   <li><strong>Consignment kept separate.</strong> The dealer's share and the consignor's amount are two numbers, never blended into one.</li>
   <li><strong>Your own rates.</strong> Every rate and every tier is yours to set once, on the options page.</li>
 </ul>
+<p>None of that is limited by time, count or an account. It is the whole margin tool, free.</p>
 
-<h2>With a licence (9 dollars once)</h2>
+<h2>The paid part ($9 once): the comps view</h2>
+<p>The paid part is not a bigger version of the free tier. It is a different kind of information: what
+comparable pieces actually sold for. Every figure carries its sample size, its range and its date span,
+so you can see how thin or how solid it is.</p>
 <ul>
-  <li><strong>Comps, automatic.</strong> Comparable sold prices for the reference, supplied for you. As of 21 September 2026 that is more than 1,200 sold reference level aggregates over 1,900 sold observations, across 21 brands, shown as a median with the sample count, the range and the date span behind it.</li>
+  <li><strong>Comps, supplied for you.</strong> Comparable sold prices for the reference. As of 21 September 2026 that is more than 1,200 sold reference level aggregates over 1,900 sold observations, across 21 brands, each shown as a median with the sample count, the range and the date span behind it.</li>
   <li><strong>Honest by construction.</strong> When we hold nothing for a reference, it says so plainly. Nothing is estimated. Asking prices are labelled as asking and are never dressed up as sold prices.</li>
+  <li><strong>One payment, no subscription.</strong> The key works on your machine.</li>
 </ul>
 
 <h2>What it does not do</h2>
@@ -56,14 +64,14 @@ stack, and shows what the watch would actually leave you with, in the page, whil
 your passwords. It reads the price on the listing page you are viewing.</p>
 
 <h2>Privacy, plainly</h2>
-<p>Your watches, sales, rates and observations stay on your computer. The free features make no network
-call at all. When you use the licensed comps, the extension reads our comps file from our own host, and it
+<p>Your watches, sales, rates and observations stay on your computer. The free tier makes no network
+call at all. When you use the comps view, the extension reads our comps file from our own host, and it
 checks your licence key with Gumroad. Those two requests are the only network calls in the product. The
 licence request sends your key and nothing else. No browsing history is collected, no account is needed,
 and nothing about you is sold. <a href="./privacy.html">Full privacy policy</a>.</p>
 
 <h2>Who is selling this</h2>
-<p>The free extension is published by us, the developer, not by Google. The paid unlock is sold by us
+<p>The free extension is published by us, the developer, not by Google. The paid part is sold by us
 through Gumroad. Google is not the seller of anything here.</p>
 
 <h2>Refunds</h2>
