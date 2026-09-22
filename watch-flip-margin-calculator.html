@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watch flip margin calculator: landed cost to net proceeds</title>
+<meta name="description" content="A free watch flip margin calculator. Enter your costs and your fee rate to see landed cost, net proceeds, margin and margin on cost.">
+<style>
+  :root { color-scheme: light dark; --muted: #6b7280; --line: #e5e7eb; --bg: #fff; --fg: #111; }
+  @media (prefers-color-scheme: dark) { :root { --muted: #9ca3af; --line: #374151; --bg: #111; --fg: #eee; } }
+  body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.85rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  h3 { font-size: 1rem; margin-top: 1.6rem; }
+  .lead { font-size: 1.1rem; border-left: 3px solid var(--line); padding-left: 1rem; margin: 1.4rem 0; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border-bottom: 1px solid var(--line); padding: .5rem .6rem; text-align: left; font-variant-numeric: tabular-nums; }
+  th { font-weight: 600; }
+  code, .num { font-variant-numeric: tabular-nums; }
+  .cta a { display: inline-block; padding: .7rem 1.1rem; border: 1px solid var(--line); border-radius: .5rem; text-decoration: none; font-weight: 600; margin-right: .5rem; }
+  .cta a.primary { background: var(--fg); color: var(--bg); }
+  nav { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; font-size: .92rem; }
+  nav a { margin-right: .9rem; }
+  .calc label { display: block; margin: .5rem 0; }
+  .calc input { width: 9rem; padding: .35rem .5rem; font: inherit; }
+  .calc output { font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Watch flip margin calculator</h1>
+
+<p class="lead">A flip is only a flip if the margin is positive after every cost that actually left your
+account. This calculator runs the whole chain, in the order the money leaves.</p>
+
+<h2>Try it</h2>
+<div class="calc">
+  <label>Purchase price (or hammer): <input id="price" type="number" value="4000" step="1"></label>
+  <label>Buyer's premium percent: <input id="premium" type="number" value="20" step="0.1"></label>
+  <label>Shipping and insurance: <input id="ship" type="number" value="90" step="1"></label>
+  <label>Service or repair: <input id="service" type="number" value="350" step="1"></label>
+  <label>Duty and import percent of (price + shipping): <input id="duty" type="number" value="0" step="0.1"></label>
+  <label>Sale price: <input id="sale" type="number" value="6200" step="1"></label>
+  <label>Platform fee percent: <input id="fee" type="number" value="6.5" step="0.1"></label>
+  <p>Landed cost: <output id="o-landed">-</output></p>
+  <p>Net proceeds: <output id="o-net">-</output></p>
+  <p>Margin: <output id="o-margin">-</output></p>
+  <p>Margin on landed cost: <output id="o-pct">-</output></p>
+</div>
+<p class="muted">Everything stays in your browser. Nothing is sent anywhere. The default percentages are
+examples; use your own rates.</p>
+
+<h2>The chain, in order</h2>
+<ol>
+  <li><strong>Landed cost</strong> = purchase price + buyer's premium + shipping and insurance + duty +
+  service and parts. The buyer's premium is a percentage of the hammer, so it has to be applied before
+  you add the flat costs.</li>
+  <li><strong>Net proceeds</strong> = sale price minus the platform fee. If the buyer paid shipping and
+  the platform charges its percentage on that too, include it in the base.</li>
+  <li><strong>Margin</strong> = net proceeds minus landed cost.</li>
+  <li><strong>Margin on cost</strong> = margin divided by landed cost. This is the number worth
+  comparing between deals, because a 500 margin on a 2,000 watch is a different business from a 500
+  margin on a 9,000 watch.</li>
+</ol>
+
+<h2>The mistake the calculator exists to catch</h2>
+<p>Pricing the deal at the hammer and the profit at the sale price. In the defaults above the gap
+between purchase price and sale price is 2,200, and the real margin is far smaller than that. That gap
+was never the profit.</p>
+
+
+<h2>Run these numbers on the listing you are looking at</h2>
+<p>Flip Ledger does this arithmetic in the eBay or Chrono24 page you already have open, using your own
+rate tables. The free tier is a complete tool, permanently: landed cost, the fee stack, net proceeds,
+margin and the consignment split, with no account and nothing limited by time or by count.</p>
+<p class="cta">
+  <a class="primary" href="https://chromewebstore.google.com/detail/flip-ledger/cioaejkfgbfmmnjlfehooageelelfpec?utm_source=site&amp;utm_medium=seo&amp;utm_campaign=flip_ledger&amp;utm_content=watch-flip-margin-calculator">Get it on the Chrome Web Store</a>
+  <a href="https://lloydian818.gumroad.com/l/flip-ledger?utm_source=site&amp;utm_medium=seo&amp;utm_campaign=flip_ledger&amp;utm_content=watch-flip-margin-calculator">See the comps view ($9 once)</a>
+</p>
+
+
+<script>
+(function () {
+  const ids = ['price','premium','ship','service','duty','sale','fee'];
+  const money = (n) => n.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  function run() {
+    const v = {};
+    for (const id of ids) v[id] = parseFloat(document.getElementById(id).value) || 0;
+    const duty = (v.price + v.ship) * (v.duty / 100);
+    const landed = v.price + v.price * (v.premium / 100) + v.ship + duty + v.service;
+    const net = v.sale - v.sale * (v.fee / 100);
+    const margin = net - landed;
+    document.getElementById('o-landed').textContent = money(landed);
+    document.getElementById('o-net').textContent = money(net);
+    document.getElementById('o-margin').textContent = money(margin);
+    document.getElementById('o-pct').textContent = landed > 0 ? ((margin / landed) * 100).toFixed(1) + '%' : '-';
+  }
+  for (const id of ids) document.getElementById(id).addEventListener('input', run);
+  run();
+})();
+</script>
+
+<nav>
+  <a href="./index.html">Flip Ledger</a>
+  <a href="./ebay-final-value-fee-watches.html">eBay fee for watches</a>
+  <a href="./chrono24-seller-fees.html">Chrono24 seller fees</a>
+  <a href="./watch-flip-margin-calculator.html">Margin calculator</a>
+  <a href="./ebay-authentication-cost.html">Authentication cost</a>
+  <a href="./landed-cost-shipping-import.html">Landed cost</a>
+  <a href="./privacy.html">Privacy</a>
+</nav>
+<p class="muted">Flip Ledger is a Chrome extension for watch dealers. Free tier is a complete tool,
+permanently.</p>
+</body>
+</html>

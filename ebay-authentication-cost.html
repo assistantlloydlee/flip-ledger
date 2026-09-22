@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eBay authentication cost for watches: the line people leave out</title>
+<meta name="description" content="How to account for watch authentication in your margin, why it is a logistics cost as well as a fee, and where it belongs in the calculation.">
+<style>
+  :root { color-scheme: light dark; --muted: #6b7280; --line: #e5e7eb; --bg: #fff; --fg: #111; }
+  @media (prefers-color-scheme: dark) { :root { --muted: #9ca3af; --line: #374151; --bg: #111; --fg: #eee; } }
+  body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.85rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  h3 { font-size: 1rem; margin-top: 1.6rem; }
+  .lead { font-size: 1.1rem; border-left: 3px solid var(--line); padding-left: 1rem; margin: 1.4rem 0; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border-bottom: 1px solid var(--line); padding: .5rem .6rem; text-align: left; font-variant-numeric: tabular-nums; }
+  th { font-weight: 600; }
+  code, .num { font-variant-numeric: tabular-nums; }
+  .cta a { display: inline-block; padding: .7rem 1.1rem; border: 1px solid var(--line); border-radius: .5rem; text-decoration: none; font-weight: 600; margin-right: .5rem; }
+  .cta a.primary { background: var(--fg); color: var(--bg); }
+  nav { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; font-size: .92rem; }
+  nav a { margin-right: .9rem; }
+  .calc label { display: block; margin: .5rem 0; }
+  .calc input { width: 9rem; padding: .35rem .5rem; font: inherit; }
+  .calc output { font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>eBay authentication cost for watches</h1>
+
+<p class="lead">For watches above a threshold, a sale can route through an authentication step. It
+changes your costs in more than one way, and because eBay's terms and thresholds change, the honest move
+is to model it as its own line rather than guess a number.</p>
+
+<h2>What it actually costs you</h2>
+<ol>
+  <li><strong>Shipping to the authenticator</strong>, which is a cost you carry before the buyer ever
+  gets the watch.</li>
+  <li><strong>Time.</strong> The money is tied up longer than a normal sale, and capital that sits still
+  is a cost even when no invoice is issued for it.</li>
+  <li><strong>Risk on condition.</strong> An item that fails authentication comes back to you, and you
+  are now holding a watch you thought you had sold.</li>
+  <li><strong>Any fee eBay applies for the step</strong>, where one applies. Check the current terms for
+  your category and price band, because this is exactly the sort of thing that changes.</li>
+</ol>
+
+<h2>Where it belongs in the calculation</h2>
+<p>On the buy side, with the other costs you paid to get the watch sold. Not deducted from the sale
+price, and not left out because it is awkward. A margin that only works if authentication is free is not
+a margin.</p>
+<table>
+  <tr><th>Line</th><th>Amount</th></tr>
+  <tr><td>Sale price</td><td class="num">4,800.00</td></tr>
+  <tr><td>Platform fee, example rate</td><td class="num">480.00</td></tr>
+  <tr><td>Insured shipping to the authenticator</td><td class="num">95.00</td></tr>
+  <tr><td>Authentication fee, where one applies</td><td class="num">40.00</td></tr>
+  <tr><td>Net proceeds</td><td class="num">4,185.00</td></tr>
+  <tr><td>Landed cost</td><td class="num">3,900.00</td></tr>
+  <tr><td>Margin</td><td class="num">285.00</td></tr>
+</table>
+<p class="muted">All figures above are examples. Your rates, bands and thresholds are your own.</p>
+
+<h2>The practical rule</h2>
+<p>Before you bid, decide whether the watch is likely to route through authentication, add the shipping
+and any fee as real lines, and check the margin is still there. If the deal only works with that line
+missing, the deal does not work.</p>
+
+
+<h2>Run these numbers on the listing you are looking at</h2>
+<p>Flip Ledger does this arithmetic in the eBay or Chrono24 page you already have open, using your own
+rate tables. The free tier is a complete tool, permanently: landed cost, the fee stack, net proceeds,
+margin and the consignment split, with no account and nothing limited by time or by count.</p>
+<p class="cta">
+  <a class="primary" href="https://chromewebstore.google.com/detail/flip-ledger/cioaejkfgbfmmnjlfehooageelelfpec?utm_source=site&amp;utm_medium=seo&amp;utm_campaign=flip_ledger&amp;utm_content=ebay-authentication-cost">Get it on the Chrome Web Store</a>
+  <a href="https://lloydian818.gumroad.com/l/flip-ledger?utm_source=site&amp;utm_medium=seo&amp;utm_campaign=flip_ledger&amp;utm_content=ebay-authentication-cost">See the comps view ($9 once)</a>
+</p>
+
+
+<nav>
+  <a href="./index.html">Flip Ledger</a>
+  <a href="./ebay-final-value-fee-watches.html">eBay fee for watches</a>
+  <a href="./chrono24-seller-fees.html">Chrono24 seller fees</a>
+  <a href="./watch-flip-margin-calculator.html">Margin calculator</a>
+  <a href="./ebay-authentication-cost.html">Authentication cost</a>
+  <a href="./landed-cost-shipping-import.html">Landed cost</a>
+  <a href="./privacy.html">Privacy</a>
+</nav>
+<p class="muted">Flip Ledger is a Chrome extension for watch dealers. Free tier is a complete tool,
+permanently.</p>
+</body>
+</html>

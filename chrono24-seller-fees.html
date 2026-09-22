@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chrono24 seller fees: how to model what you keep</title>
+<meta name="description" content="How to work out your net proceeds after Chrono24 seller fees, and why the buyer-side costs on a watch sale belong in the same calculation.">
+<style>
+  :root { color-scheme: light dark; --muted: #6b7280; --line: #e5e7eb; --bg: #fff; --fg: #111; }
+  @media (prefers-color-scheme: dark) { :root { --muted: #9ca3af; --line: #374151; --bg: #111; --fg: #eee; } }
+  body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.85rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  h3 { font-size: 1rem; margin-top: 1.6rem; }
+  .lead { font-size: 1.1rem; border-left: 3px solid var(--line); padding-left: 1rem; margin: 1.4rem 0; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border-bottom: 1px solid var(--line); padding: .5rem .6rem; text-align: left; font-variant-numeric: tabular-nums; }
+  th { font-weight: 600; }
+  code, .num { font-variant-numeric: tabular-nums; }
+  .cta a { display: inline-block; padding: .7rem 1.1rem; border: 1px solid var(--line); border-radius: .5rem; text-decoration: none; font-weight: 600; margin-right: .5rem; }
+  .cta a.primary { background: var(--fg); color: var(--bg); }
+  nav { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; font-size: .92rem; }
+  nav a { margin-right: .9rem; }
+  .calc label { display: block; margin: .5rem 0; }
+  .calc input { width: 9rem; padding: .35rem .5rem; font: inherit; }
+  .calc output { font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Chrono24 seller fees</h1>
+
+<p class="lead">Chrono24 is not eBay with a different logo. The seller fee structure differs, the
+buyer's side differs, and the two are easy to blend into one number that is wrong.</p>
+
+<h2>How to model it correctly</h2>
+<ol>
+  <li><strong>Start from what the buyer actually pays.</strong> On some listings that is the asking
+  price; on others there are buyer-side costs on top. Only the amount that reaches you matters for your
+  fee.</li>
+  <li><strong>Apply your seller fee to the right base.</strong> Put in the percentage you actually
+  agreed, from your own account, not a figure from a forum post. The rate depends on your listing
+  arrangement.</li>
+  <li><strong>Then subtract the costs you carried to get the watch to the buyer:</strong> shipping,
+  insurance, any authentication or service work.</li>
+  <li><strong>Compare against landed cost, not against the asking price.</strong> The gap between
+  asking price and what you paid is not profit.</li>
+</ol>
+
+<h2>Worked example</h2>
+<p>The percentages below are <em>examples</em> only. Use the rate from your own Chrono24 account.</p>
+<table>
+  <tr><th>Line</th><th>Amount</th></tr>
+  <tr><td>Buyer pays</td><td class="num">8,500.00</td></tr>
+  <tr><td>Seller fee at an example 6.5 percent</td><td class="num">552.50</td></tr>
+  <tr><td>Insured shipping you paid</td><td class="num">85.00</td></tr>
+  <tr><td>Net proceeds to you</td><td class="num">7,862.50</td></tr>
+  <tr><td>Your landed cost</td><td class="num">7,100.00</td></tr>
+  <tr><td>Margin</td><td class="num">762.50</td></tr>
+  <tr><td>Margin on landed cost</td><td class="num">10.7%</td></tr>
+</table>
+
+<h3>Why dealers get this wrong</h3>
+<p>Two reasons. First, quoting margin against the sale price rather than against what they put in,
+which makes a thin deal look fat. Second, forgetting that a watch bought at auction carries a buyer's
+premium, so the landed cost is higher than the hammer price they remember.</p>
+
+<h2>Consignment is a different calculation</h2>
+<p>If the watch is not yours, your basis is not the purchase price, because you did not buy it. Your
+share is the consignment percentage of net, and the consignor's amount is a separate number. Blending
+the two into one margin line is how books go wrong. Flip Ledger keeps them apart on purpose.</p>
+
+
+<h2>Run these numbers on the listing you are looking at</h2>
+<p>Flip Ledger does this arithmetic in the eBay or Chrono24 page you already have open, using your own
+rate tables. The free tier is a complete tool, permanently: landed cost, the fee stack, net proceeds,
+margin and the consignment split, with no account and nothing limited by time or by count.</p>
+<p class="cta">
+  <a class="primary" href="https://chromewebstore.google.com/detail/flip-ledger/cioaejkfgbfmmnjlfehooageelelfpec?utm_source=site&amp;utm_medium=seo&amp;utm_campaign=flip_ledger&amp;utm_content=chrono24-seller-fees">Get it on the Chrome Web Store</a>
+  <a href="https://lloydian818.gumroad.com/l/flip-ledger?utm_source=site&amp;utm_medium=seo&amp;utm_campaign=flip_ledger&amp;utm_content=chrono24-seller-fees">See the comps view ($9 once)</a>
+</p>
+
+
+<nav>
+  <a href="./index.html">Flip Ledger</a>
+  <a href="./ebay-final-value-fee-watches.html">eBay fee for watches</a>
+  <a href="./chrono24-seller-fees.html">Chrono24 seller fees</a>
+  <a href="./watch-flip-margin-calculator.html">Margin calculator</a>
+  <a href="./ebay-authentication-cost.html">Authentication cost</a>
+  <a href="./landed-cost-shipping-import.html">Landed cost</a>
+  <a href="./privacy.html">Privacy</a>
+</nav>
+<p class="muted">Flip Ledger is a Chrome extension for watch dealers. Free tier is a complete tool,
+permanently.</p>
+</body>
+</html>
