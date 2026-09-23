@@ -1,7 +1,7 @@
 {
  "schemaVersion": 2,
- "snapshotDate": "2026-09-22",
- "generatedAt": "2026-09-22T10:20:00Z",
+ "snapshotDate": "2026-09-23",
+ "generatedAt": "2026-09-23T10:20:02Z",
  "provenance": "Derived aggregate snapshot. Each entry is a reference level statistic (count, median, range, date span) computed by us from our own compiled record of sold and asking observations, not individual listing rows. Refreshed nightly by refresh_comps.py and served from our own static host. Displayed figures carry no third party attribution.",
  "displayDecision": "The displayed aggregates are our own compiled record, shown as our own derived statistics under Christopher's 2026-09-17 directive to ship comps from what we hold. Direct eBay sold-data access is an application in progress. No eBay attributed statistic is displayed.",
  "sources": [
@@ -9,7 +9,7 @@
    "id": "own_compiled",
    "label": "our own compiled sold and asking observations",
    "status": "ok",
-   "asOf": "2026-09-22",
+   "asOf": "2026-09-23",
    "note": "derived aggregates only, computed by us from our own compiled record of sold and asking observations. No listing rows, titles, images, sellers or per item URLs are stored or shown.",
    "terms": "our own compiled record, derived statistics only"
   },
@@ -17,7 +17,7 @@
    "id": "ebay_sold",
    "label": "eBay sold and completed listings (upstream origin)",
    "status": "blocked",
-   "asOf": "2026-09-22",
+   "asOf": "2026-09-23",
    "note": "an upstream origin for part of our compilation, not a display source: direct programmatic access is an application in progress (Marketplace Insights), and we do not display eBay rows or eBay-attributed statistics. Our compiled aggregate is shown instead.",
    "terms": "derived aggregates from our own compiled record; no eBay attribution on any displayed figure"
   },
@@ -25,7 +25,7 @@
    "id": "watchcharts",
    "label": "WatchCharts market price",
    "status": "blocked",
-   "asOf": "2026-09-22",
+   "asOf": "2026-09-23",
    "note": "not included in this snapshot; a distribution licence is required and is a paid decision",
    "terms": "licence required to display"
   },
@@ -33,7 +33,7 @@
    "id": "chrono24",
    "label": "Chrono24 US and global asks (upstream origin)",
    "status": "blocked",
-   "asOf": "2026-09-22",
+   "asOf": "2026-09-23",
    "note": "an upstream origin for part of our own observed asks, not a display source: terms do not permit commercial display of their rows. Only our own compiled aggregate is shown.",
    "terms": "derived aggregates from our own compiled record; no Chrono24 attribution on any displayed figure"
   },
@@ -41,7 +41,7 @@
    "id": "everywatch",
    "label": "EveryWatch auction sales",
    "status": "stale",
-   "asOf": "2026-09-22",
+   "asOf": "2026-09-23",
    "note": "no auction sales inside this window",
    "terms": "derived statistics only, attributed"
   }
@@ -53,79 +53,17 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "asking",
-   "n": 74,
-   "medianCents": 457500,
-   "minCents": 242900,
+   "n": 68,
+   "medianCents": 479500,
+   "minCents": 248900,
    "maxCents": 1759000,
    "firstDate": "2026-09-14",
-   "lastDate": "2026-09-21",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
    "originIds": [
     "bobswatches",
-    "chrono24",
-    "europeanwatch",
-    "reddit"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Explorer II",
-   "referenceNumber": "16570",
-   "colorCombo": "black",
-   "kind": "asking",
-   "n": 60,
-   "medianCents": 753000,
-   "minCents": 549000,
-   "maxCents": 1190000,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-21",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "chrono24",
-    "europeanwatch",
-    "reddit"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Yacht-Master",
-   "referenceNumber": "16622",
-   "colorCombo": "silver / oyster",
-   "kind": "asking",
-   "n": 56,
-   "medianCents": 887400,
-   "minCents": 653500,
-   "maxCents": 1086900,
-   "firstDate": "2026-09-09",
-   "lastDate": "2026-09-20",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "chrono24",
-    "europeanwatch"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Submariner",
-   "referenceNumber": "16610",
-   "colorCombo": "black",
-   "kind": "asking",
-   "n": 55,
-   "medianCents": 891100,
-   "minCents": 380200,
-   "maxCents": 2365000,
-   "firstDate": "2026-09-14",
-   "lastDate": "2026-09-21",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
     "chrono24",
     "europeanwatch",
     "reddit"
@@ -153,16 +91,78 @@
   },
   {
    "brand": "Rolex",
-   "model": "Explorer",
-   "referenceNumber": "214270",
-   "colorCombo": "",
+   "model": "Explorer II",
+   "referenceNumber": "16570",
+   "colorCombo": "black",
    "kind": "asking",
-   "n": 47,
-   "medianCents": 769600,
-   "minCents": 650000,
-   "maxCents": 990000,
-   "firstDate": "2026-09-07",
-   "lastDate": "2026-09-21",
+   "n": 48,
+   "medianCents": 760750,
+   "minCents": 549000,
+   "maxCents": 1190000,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "chrono24",
+    "europeanwatch",
+    "reddit"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Submariner",
+   "referenceNumber": "16610",
+   "colorCombo": "black",
+   "kind": "asking",
+   "n": 44,
+   "medianCents": 894600,
+   "minCents": 380200,
+   "maxCents": 2365000,
+   "firstDate": "2026-09-14",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "chrono24",
+    "europeanwatch",
+    "reddit"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Yacht-Master",
+   "referenceNumber": "16622",
+   "colorCombo": "silver / oyster",
+   "kind": "asking",
+   "n": 43,
+   "medianCents": 888000,
+   "minCents": 653500,
+   "maxCents": 1086900,
+   "firstDate": "2026-09-09",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "chrono24",
+    "europeanwatch"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "GMT-Master II",
+   "referenceNumber": "",
+   "colorCombo": "black",
+   "kind": "asking",
+   "n": 37,
+   "medianCents": 1299500,
+   "minCents": 916400,
+   "maxCents": 2319500,
+   "firstDate": "2026-09-19",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
@@ -173,25 +173,24 @@
    ]
   },
   {
-   "brand": "Cartier",
-   "model": "Santos",
-   "referenceNumber": "",
-   "colorCombo": "white",
+   "brand": "Rolex",
+   "model": "Explorer",
+   "referenceNumber": "214270",
+   "colorCombo": "",
    "kind": "asking",
-   "n": 42,
-   "medianCents": 649500,
-   "minCents": 200100,
-   "maxCents": 2350000,
-   "firstDate": "2026-09-18",
-   "lastDate": "2026-09-21",
+   "n": 36,
+   "medianCents": 770000,
+   "minCents": 650000,
+   "maxCents": 990000,
+   "firstDate": "2026-09-07",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
    "originIds": [
     "bobswatches",
     "chrono24",
-    "europeanwatch",
-    "reddit"
+    "europeanwatch"
    ]
   },
   {
@@ -205,7 +204,7 @@
    "minCents": 200000,
    "maxCents": 699500,
    "firstDate": "2026-09-14",
-   "lastDate": "2026-09-21",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
@@ -216,16 +215,16 @@
    ]
   },
   {
-   "brand": "Rolex",
-   "model": "GMT-Master II",
+   "brand": "Cartier",
+   "model": "Santos",
    "referenceNumber": "",
-   "colorCombo": "black",
+   "colorCombo": "white",
    "kind": "asking",
-   "n": 34,
-   "medianCents": 1324500,
-   "minCents": 916400,
-   "maxCents": 2319500,
-   "firstDate": "2026-09-19",
+   "n": 30,
+   "medianCents": 762500,
+   "minCents": 204500,
+   "maxCents": 2350000,
+   "firstDate": "2026-09-18",
    "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
@@ -233,47 +232,8 @@
    "originIds": [
     "bobswatches",
     "chrono24",
-    "europeanwatch"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "GMT-Master II",
-   "referenceNumber": "116713LN",
-   "colorCombo": "black",
-   "kind": "asking",
-   "n": 29,
-   "medianCents": 1350000,
-   "minCents": 1168800,
-   "maxCents": 1420800,
-   "firstDate": "2026-09-13",
-   "lastDate": "2026-09-20",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "chrono24"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Submariner",
-   "referenceNumber": "",
-   "colorCombo": "black",
-   "kind": "asking",
-   "n": 23,
-   "medianCents": 867800,
-   "minCents": 746600,
-   "maxCents": 2010000,
-   "firstDate": "2026-09-20",
-   "lastDate": "2026-09-21",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "bobswatches",
-    "chrono24",
-    "europeanwatch"
+    "europeanwatch",
+    "reddit"
    ]
   },
   {
@@ -296,23 +256,44 @@
    ]
   },
   {
-   "brand": "Breitling",
-   "model": "Superocean",
+   "brand": "Rolex",
+   "model": "Submariner",
    "referenceNumber": "",
-   "colorCombo": "green",
+   "colorCombo": "black",
    "kind": "asking",
-   "n": 17,
-   "medianCents": 205900,
-   "minCents": 200000,
-   "maxCents": 449500,
-   "firstDate": "2026-09-18",
-   "lastDate": "2026-09-21",
+   "n": 19,
+   "medianCents": 1049000,
+   "minCents": 746600,
+   "maxCents": 2010000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
    "originIds": [
     "bobswatches",
-    "chrono24"
+    "chrono24",
+    "europeanwatch"
+   ]
+  },
+  {
+   "brand": "Vacheron Constantin",
+   "model": "Patrimony",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 17,
+   "medianCents": 508100,
+   "minCents": 412200,
+   "maxCents": 2275000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "chrono24",
+    "europeanwatch"
    ]
   },
   {
@@ -337,36 +318,35 @@
   },
   {
    "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "16233",
+   "colorCombo": "white / jubilee",
+   "kind": "asking",
+   "n": 16,
+   "medianCents": 570950,
+   "minCents": 349500,
+   "maxCents": 602100,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "chrono24"
+   ]
+  },
+  {
+   "brand": "Rolex",
    "model": "Oyster Perpetual",
    "referenceNumber": "15200",
    "colorCombo": "white / oyster",
    "kind": "asking",
    "n": 16,
-   "medianCents": 456750,
-   "minCents": 409000,
+   "medianCents": 458250,
+   "minCents": 410600,
    "maxCents": 590000,
    "firstDate": "2026-09-20",
-   "lastDate": "2026-09-20",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "chrono24",
-    "europeanwatch"
-   ]
-  },
-  {
-   "brand": "Vacheron Constantin",
-   "model": "Patrimony",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "asking",
-   "n": 16,
-   "medianCents": 508850,
-   "minCents": 411100,
-   "maxCents": 2275000,
-   "firstDate": "2026-09-20",
-   "lastDate": "2026-09-21",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
@@ -435,15 +415,15 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
-   "referenceNumber": "16233",
-   "colorCombo": "white / jubilee",
+   "referenceNumber": "69173",
+   "colorCombo": "champagne",
    "kind": "asking",
    "n": 15,
-   "medianCents": 564800,
-   "minCents": 349500,
-   "maxCents": 600400,
-   "firstDate": "2026-09-20",
-   "lastDate": "2026-09-20",
+   "medianCents": 438400,
+   "minCents": 325900,
+   "maxCents": 449200,
+   "firstDate": "2026-09-19",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
@@ -453,21 +433,61 @@
   },
   {
    "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "69173",
-   "colorCombo": "champagne",
+   "model": "Explorer II",
+   "referenceNumber": "216570",
+   "colorCombo": "black",
    "kind": "asking",
    "n": 15,
-   "medianCents": 436600,
-   "minCents": 324600,
-   "maxCents": 449200,
-   "firstDate": "2026-09-19",
-   "lastDate": "2026-09-20",
+   "medianCents": 919500,
+   "minCents": 883300,
+   "maxCents": 941000,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
    "originIds": [
     "chrono24"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "GMT-Master II",
+   "referenceNumber": "116713LN",
+   "colorCombo": "black",
+   "kind": "asking",
+   "n": 15,
+   "medianCents": 1370200,
+   "minCents": 1178100,
+   "maxCents": 1420800,
+   "firstDate": "2026-09-13",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "chrono24"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 14,
+   "medianCents": 579500,
+   "minCents": 200000,
+   "maxCents": 1599500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24",
+    "europeanwatch"
    ]
   },
   {
@@ -491,6 +511,26 @@
    ]
   },
   {
+   "brand": "Grand Seiko",
+   "model": "Sport",
+   "referenceNumber": "SBGE253",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 13,
+   "medianCents": 560500,
+   "minCents": 428900,
+   "maxCents": 679500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24"
+   ]
+  },
+  {
    "brand": "Omega",
    "model": "Speedmaster",
    "referenceNumber": "",
@@ -507,6 +547,26 @@
    ],
    "originIds": [
     "europeanwatch"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Superocean",
+   "referenceNumber": "",
+   "colorCombo": "green",
+   "kind": "asking",
+   "n": 12,
+   "medianCents": 278550,
+   "minCents": 200100,
+   "maxCents": 449500,
+   "firstDate": "2026-09-18",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24"
    ]
   },
   {
@@ -529,36 +589,17 @@
    ]
   },
   {
-   "brand": "Grand Seiko",
-   "model": "Sport",
-   "referenceNumber": "SBGE253",
-   "colorCombo": "",
-   "kind": "asking",
-   "n": 9,
-   "medianCents": 558300,
-   "minCents": 427200,
-   "maxCents": 677800,
-   "firstDate": "2026-09-20",
-   "lastDate": "2026-09-20",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "chrono24"
-   ]
-  },
-  {
    "brand": "Rolex",
    "model": "Submariner",
    "referenceNumber": "1680",
    "colorCombo": "",
    "kind": "asking",
-   "n": 9,
-   "medianCents": 1020000,
+   "n": 11,
+   "medianCents": 1003100,
    "minCents": 890000,
-   "maxCents": 1045400,
+   "maxCents": 1048200,
    "firstDate": "2026-09-20",
-   "lastDate": "2026-09-20",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
@@ -607,20 +648,81 @@
   },
   {
    "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "69173",
-   "colorCombo": "",
+   "model": "Submariner",
+   "referenceNumber": "",
+   "colorCombo": "blue",
    "kind": "asking",
-   "n": 2,
-   "medianCents": 427450,
-   "minCents": 418300,
-   "maxCents": 436600,
-   "firstDate": "2026-09-20",
-   "lastDate": "2026-09-20",
+   "n": 5,
+   "medianCents": 1399500,
+   "minCents": 878300,
+   "maxCents": 1699500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
    "originIds": [
+    "bobswatches",
+    "chrono24"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 4,
+   "medianCents": 429200,
+   "minCents": 406300,
+   "maxCents": 599500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Explorer II",
+   "referenceNumber": "16570",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 3,
+   "medianCents": 753700,
+   "minCents": 719200,
+   "maxCents": 1029500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24"
+   ]
+  },
+  {
+   "brand": "Omega",
+   "model": "Seamaster Planet Ocean",
+   "referenceNumber": "",
+   "colorCombo": "black",
+   "kind": "asking",
+   "n": 2,
+   "medianCents": 438700,
+   "minCents": 277900,
+   "maxCents": 599500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
     "chrono24"
    ]
   },
@@ -649,12 +751,12 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
-   "n": 52,
-   "medianCents": 609362,
+   "n": 59,
+   "medianCents": 618723,
    "minCents": 301353,
    "maxCents": 964440,
    "firstDate": "2026-02-19",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -668,12 +770,12 @@
    "referenceNumber": "",
    "colorCombo": "black",
    "kind": "sold",
-   "n": 37,
-   "medianCents": 400000,
+   "n": 39,
+   "medianCents": 430000,
    "minCents": 300000,
    "maxCents": 1019881,
    "firstDate": "2026-02-21",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -687,12 +789,12 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
-   "n": 27,
-   "medianCents": 458000,
+   "n": 35,
+   "medianCents": 458117,
    "minCents": 305000,
    "maxCents": 1250000,
    "firstDate": "2026-02-16",
-   "lastDate": "2026-09-20",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -706,12 +808,12 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
-   "n": 23,
-   "medianCents": 459995,
+   "n": 24,
+   "medianCents": 452498,
    "minCents": 304300,
    "maxCents": 825000,
    "firstDate": "2026-09-11",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -725,12 +827,12 @@
    "referenceNumber": "",
    "colorCombo": "black",
    "kind": "sold",
-   "n": 19,
+   "n": 23,
    "medianCents": 400000,
    "minCents": 310917,
    "maxCents": 810000,
    "firstDate": "2026-09-10",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -744,12 +846,12 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
-   "n": 17,
-   "medianCents": 397200,
-   "minCents": 300161,
-   "maxCents": 550000,
+   "n": 22,
+   "medianCents": 401565,
+   "minCents": 300000,
+   "maxCents": 598500,
    "firstDate": "2026-09-09",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -763,12 +865,12 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
-   "n": 16,
-   "medianCents": 708550,
+   "n": 17,
+   "medianCents": 737100,
    "minCents": 379302,
    "maxCents": 1430000,
    "firstDate": "2026-08-30",
-   "lastDate": "2026-09-18",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -782,12 +884,12 @@
    "referenceNumber": "",
    "colorCombo": "blue",
    "kind": "sold",
-   "n": 16,
+   "n": 17,
    "medianCents": 354014,
    "minCents": 324500,
    "maxCents": 599800,
    "firstDate": "2026-01-30",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -801,12 +903,12 @@
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
-   "n": 14,
-   "medianCents": 369750,
+   "n": 15,
+   "medianCents": 370000,
    "minCents": 310000,
    "maxCents": 660000,
    "firstDate": "2026-09-08",
-   "lastDate": "2026-09-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -845,6 +947,25 @@
    "maxCents": 700000,
    "firstDate": "2026-09-11",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Avenger",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 10,
+   "medianCents": 407450,
+   "minCents": 302200,
+   "maxCents": 549500,
+   "firstDate": "2026-09-08",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -910,17 +1031,17 @@
    ]
   },
   {
-   "brand": "Breitling",
-   "model": "Avenger",
+   "brand": "Cartier",
+   "model": "Panth\u00e8re",
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
    "n": 9,
-   "medianCents": 435000,
-   "minCents": 302200,
-   "maxCents": 549500,
-   "firstDate": "2026-09-08",
-   "lastDate": "2026-09-18",
+   "medianCents": 495000,
+   "minCents": 355000,
+   "maxCents": 700000,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -940,6 +1061,25 @@
    "maxCents": 973728,
    "firstDate": "2026-09-05",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Superocean",
+   "referenceNumber": "",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 8,
+   "medianCents": 325000,
+   "minCents": 311643,
+   "maxCents": 375530,
+   "firstDate": "2026-08-19",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1006,16 +1146,16 @@
   },
   {
    "brand": "Breitling",
-   "model": "Superocean",
+   "model": "Navitimer",
    "referenceNumber": "",
-   "colorCombo": "blue",
+   "colorCombo": "",
    "kind": "sold",
    "n": 7,
-   "medianCents": 325000,
-   "minCents": 311643,
-   "maxCents": 375530,
-   "firstDate": "2026-08-19",
-   "lastDate": "2026-09-13",
+   "medianCents": 395000,
+   "minCents": 354000,
+   "maxCents": 823900,
+   "firstDate": "2026-06-04",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1044,6 +1184,25 @@
   },
   {
    "brand": "Omega",
+   "model": "Seamaster Planet Ocean",
+   "referenceNumber": "",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 7,
+   "medianCents": 449900,
+   "minCents": 339500,
+   "maxCents": 747100,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Omega",
    "model": "Speedmaster",
    "referenceNumber": "",
    "colorCombo": "silver",
@@ -1062,17 +1221,17 @@
    ]
   },
   {
-   "brand": "Cartier",
-   "model": "Panth\u00e8re",
-   "referenceNumber": "",
-   "colorCombo": "",
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "champagne",
    "kind": "sold",
-   "n": 6,
-   "medianCents": 530250,
-   "minCents": 355000,
-   "maxCents": 700000,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-19",
+   "n": 7,
+   "medianCents": 385000,
+   "minCents": 325000,
+   "maxCents": 589500,
+   "firstDate": "2026-09-06",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1081,17 +1240,36 @@
    ]
   },
   {
-   "brand": "Omega",
-   "model": "Seamaster Planet Ocean",
+   "brand": "Cartier",
+   "model": "Santos",
    "referenceNumber": "",
-   "colorCombo": "black",
+   "colorCombo": "white",
    "kind": "sold",
    "n": 6,
-   "medianCents": 443950,
-   "minCents": 339500,
-   "maxCents": 747100,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-18",
+   "medianCents": 545442,
+   "minCents": 350000,
+   "maxCents": 770256,
+   "firstDate": "2026-08-26",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "1603",
+   "colorCombo": "silver / jubilee",
+   "kind": "sold",
+   "n": 6,
+   "medianCents": 401500,
+   "minCents": 300000,
+   "maxCents": 467498,
+   "firstDate": "2026-09-06",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1122,14 +1300,14 @@
    "brand": "Rolex",
    "model": "Datejust",
    "referenceNumber": "69173",
-   "colorCombo": "champagne",
+   "colorCombo": "",
    "kind": "sold",
    "n": 6,
-   "medianCents": 402500,
-   "minCents": 325000,
-   "maxCents": 589500,
-   "firstDate": "2026-09-06",
-   "lastDate": "2026-09-19",
+   "medianCents": 464410,
+   "minCents": 350000,
+   "maxCents": 516113,
+   "firstDate": "2026-09-05",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1158,16 +1336,16 @@
   },
   {
    "brand": "Breitling",
-   "model": "Navitimer",
+   "model": "Chronomat",
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
    "n": 5,
-   "medianCents": 378900,
-   "minCents": 354000,
-   "maxCents": 596855,
-   "firstDate": "2026-09-10",
-   "lastDate": "2026-09-19",
+   "medianCents": 706300,
+   "minCents": 553300,
+   "maxCents": 859500,
+   "firstDate": "2026-09-14",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1187,6 +1365,25 @@
    "maxCents": 548400,
    "firstDate": "2026-09-17",
    "lastDate": "2026-09-18",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
+   "referenceNumber": "IW377714",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 5,
+   "medianCents": 448900,
+   "minCents": 310000,
+   "maxCents": 465000,
+   "firstDate": "2026-09-05",
+   "lastDate": "2026-09-19",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1254,6 +1451,25 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 5,
+   "medianCents": 500000,
+   "minCents": 348500,
+   "maxCents": 749500,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "16013",
    "colorCombo": "",
    "kind": "sold",
@@ -1269,25 +1485,6 @@
    "originIds": [
     "ebay_sold",
     "loupethis"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "1603",
-   "colorCombo": "silver / jubilee",
-   "kind": "sold",
-   "n": 5,
-   "medianCents": 401500,
-   "minCents": 300000,
-   "maxCents": 415000,
-   "firstDate": "2026-09-06",
-   "lastDate": "2026-09-19",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
    ]
   },
   {
@@ -1311,25 +1508,6 @@
   },
   {
    "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "69173",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 5,
-   "medianCents": 448500,
-   "minCents": 350000,
-   "maxCents": 510147,
-   "firstDate": "2026-09-05",
-   "lastDate": "2026-09-19",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
    "model": "Explorer",
    "referenceNumber": "214270",
    "colorCombo": "",
@@ -1340,6 +1518,44 @@
    "maxCents": 770000,
    "firstDate": "2026-09-05",
    "lastDate": "2026-09-18",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Explorer II",
+   "referenceNumber": "16570",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 5,
+   "medianCents": 810000,
+   "minCents": 527997,
+   "maxCents": 839900,
+   "firstDate": "2026-08-23",
+   "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Submariner",
+   "referenceNumber": "",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 5,
+   "medianCents": 719000,
+   "minCents": 300000,
+   "maxCents": 1350000,
+   "firstDate": "2026-09-05",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1463,6 +1679,25 @@
   },
   {
    "brand": "Cartier",
+   "model": "Calibre de Cartier",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 4,
+   "medianCents": 561250,
+   "minCents": 359500,
+   "maxCents": 1350000,
+   "firstDate": "2026-09-05",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
    "model": "Roadster",
    "referenceNumber": "W62032X6",
    "colorCombo": "silver",
@@ -1482,25 +1717,6 @@
   },
   {
    "brand": "Cartier",
-   "model": "Santos",
-   "referenceNumber": "",
-   "colorCombo": "white",
-   "kind": "sold",
-   "n": 4,
-   "medianCents": 653192,
-   "minCents": 350000,
-   "maxCents": 770256,
-   "firstDate": "2026-09-13",
-   "lastDate": "2026-09-16",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Cartier",
    "model": "Tank",
    "referenceNumber": "",
    "colorCombo": "silver",
@@ -1511,44 +1727,6 @@
    "maxCents": 520000,
    "firstDate": "2026-09-17",
    "lastDate": "2026-09-17",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "IWC",
-   "model": "Pilot",
-   "referenceNumber": "IW377714",
-   "colorCombo": "blue",
-   "kind": "sold",
-   "n": 4,
-   "medianCents": 456950,
-   "minCents": 310000,
-   "maxCents": 465000,
-   "firstDate": "2026-09-05",
-   "lastDate": "2026-09-18",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 4,
-   "medianCents": 482500,
-   "minCents": 348500,
-   "maxCents": 749500,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-19",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1692,25 +1870,6 @@
   {
    "brand": "Rolex",
    "model": "Submariner",
-   "referenceNumber": "",
-   "colorCombo": "black",
-   "kind": "sold",
-   "n": 4,
-   "medianCents": 719500,
-   "minCents": 300000,
-   "maxCents": 1350000,
-   "firstDate": "2026-09-05",
-   "lastDate": "2026-09-19",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Submariner",
    "referenceNumber": "16610",
    "colorCombo": "black",
    "kind": "sold",
@@ -1739,25 +1898,6 @@
    "maxCents": 1250000,
    "firstDate": "2026-07-24",
    "lastDate": "2026-08-26",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Breitling",
-   "model": "Chronomat",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 3,
-   "medianCents": 595000,
-   "minCents": 553300,
-   "maxCents": 706300,
-   "firstDate": "2026-09-14",
-   "lastDate": "2026-09-19",
    "sourceIds": [
     "own_compiled"
    ],
@@ -1881,16 +2021,54 @@
   },
   {
    "brand": "Cartier",
-   "model": "Calibre de Cartier",
+   "model": "Santos",
+   "referenceNumber": "W20073X8",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 489500,
+   "minCents": 463170,
+   "maxCents": 500000,
+   "firstDate": "2026-09-04",
+   "lastDate": "2026-09-14",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank",
+   "referenceNumber": "WOODEN",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 385000,
+   "minCents": 375000,
+   "maxCents": 425000,
+   "firstDate": "2026-09-14",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank Francaise",
    "referenceNumber": "",
    "colorCombo": "",
    "kind": "sold",
    "n": 3,
-   "medianCents": 527500,
-   "minCents": 359500,
-   "maxCents": 1350000,
-   "firstDate": "2026-09-05",
-   "lastDate": "2026-09-18",
+   "medianCents": 375000,
+   "minCents": 309500,
+   "maxCents": 395000,
+   "firstDate": "2026-03-02",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -2051,6 +2229,44 @@
    ]
   },
   {
+   "brand": "Omega",
+   "model": "Seamaster",
+   "referenceNumber": "",
+   "colorCombo": "white",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 474500,
+   "minCents": 364500,
+   "maxCents": 479500,
+   "firstDate": "2026-09-13",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Air-King",
+   "referenceNumber": "5500",
+   "colorCombo": "silver / oyster",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 385000,
+   "minCents": 380000,
+   "maxCents": 400000,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
    "brand": "Rolex",
    "model": "Datejust",
    "referenceNumber": "",
@@ -2148,6 +2364,25 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "16013",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 499500,
+   "minCents": 327500,
+   "maxCents": 960000,
+   "firstDate": "2026-09-10",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "16030",
    "colorCombo": "silver / jubilee",
    "kind": "sold",
@@ -2157,6 +2392,25 @@
    "maxCents": 530000,
    "firstDate": "2026-09-10",
    "lastDate": "2026-09-18",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "jubilee",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 499999,
+   "minCents": 480000,
+   "maxCents": 572000,
+   "firstDate": "2026-09-05",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -2187,14 +2441,14 @@
    "brand": "Rolex",
    "model": "Explorer II",
    "referenceNumber": "16570",
-   "colorCombo": "",
+   "colorCombo": "white",
    "kind": "sold",
    "n": 3,
    "medianCents": 820000,
-   "minCents": 810000,
-   "maxCents": 839900,
+   "minCents": 820000,
+   "maxCents": 825000,
    "firstDate": "2026-09-05",
-   "lastDate": "2026-09-15",
+   "lastDate": "2026-09-18",
    "sourceIds": [
     "own_compiled"
    ],
@@ -2205,15 +2459,15 @@
   {
    "brand": "Rolex",
    "model": "Explorer II",
-   "referenceNumber": "16570",
-   "colorCombo": "white",
+   "referenceNumber": "216570",
+   "colorCombo": "black",
    "kind": "sold",
    "n": 3,
-   "medianCents": 820000,
-   "minCents": 820000,
-   "maxCents": 825000,
-   "firstDate": "2026-09-05",
-   "lastDate": "2026-09-18",
+   "medianCents": 890000,
+   "minCents": 850000,
+   "maxCents": 899500,
+   "firstDate": "2026-09-15",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -2319,6 +2573,25 @@
   {
    "brand": "Rolex",
    "model": "Oyster Perpetual",
+   "referenceNumber": "1500",
+   "colorCombo": "oyster",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 399900,
+   "minCents": 320000,
+   "maxCents": 699000,
+   "firstDate": "2026-09-15",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
    "referenceNumber": "15200",
    "colorCombo": "white / oyster",
    "kind": "sold",
@@ -2328,6 +2601,25 @@
    "maxCents": 535130,
    "firstDate": "2026-09-12",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Submariner",
+   "referenceNumber": "",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 3,
+   "medianCents": 1130000,
+   "minCents": 1025000,
+   "maxCents": 1450000,
+   "firstDate": "2026-09-12",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -2566,6 +2858,25 @@
   {
    "brand": "Breitling",
    "model": "Chronomat",
+   "referenceNumber": "",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 589150,
+   "minCents": 553300,
+   "maxCents": 625000,
+   "firstDate": "2026-09-16",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Chronomat",
    "referenceNumber": "AB0115",
    "colorCombo": "",
    "kind": "sold",
@@ -2585,6 +2896,25 @@
   {
    "brand": "Breitling",
    "model": "Chronomat",
+   "referenceNumber": "AB0134",
+   "colorCombo": "green",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 516530,
+   "minCents": 516530,
+   "maxCents": 516530,
+   "firstDate": "2026-09-17",
+   "lastDate": "2026-09-17",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Chronomat",
    "referenceNumber": "B13356",
    "colorCombo": "blue",
    "kind": "sold",
@@ -2594,6 +2924,44 @@
    "maxCents": 429500,
    "firstDate": "2026-09-12",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 380000,
+   "minCents": 369999,
+   "maxCents": 390000,
+   "firstDate": "2026-09-09",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "A13322",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 349442,
+   "minCents": 338984,
+   "maxCents": 359900,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -2945,6 +3313,44 @@
   },
   {
    "brand": "Cartier",
+   "model": "Panth\u00e8re",
+   "referenceNumber": "WOMENS",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 356670,
+   "minCents": 313839,
+   "maxCents": 399500,
+   "firstDate": "2026-09-18",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Panth\u00e8re",
+   "referenceNumber": "WSPN0006",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 732548,
+   "minCents": 495095,
+   "maxCents": 970000,
+   "firstDate": "2026-09-13",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
    "model": "Roadster",
    "referenceNumber": "W62006X6",
    "colorCombo": "silver",
@@ -2974,25 +3380,6 @@
    "maxCents": 747500,
    "firstDate": "2026-09-14",
    "lastDate": "2026-09-18",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Cartier",
-   "model": "Santos",
-   "referenceNumber": "W20073X8",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 2,
-   "medianCents": 481585,
-   "minCents": 463170,
-   "maxCents": 500000,
-   "firstDate": "2026-09-13",
-   "lastDate": "2026-09-14",
    "sourceIds": [
     "own_compiled"
    ],
@@ -3192,6 +3579,25 @@
   },
   {
    "brand": "Cartier",
+   "model": "Tank Louis",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 904400,
+   "minCents": 658800,
+   "maxCents": 1150000,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
    "model": "Tank Must",
    "referenceNumber": "",
    "colorCombo": "silver",
@@ -3278,6 +3684,25 @@
    "maxCents": 352500,
    "firstDate": "2026-09-16",
    "lastDate": "2026-09-18",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Grand Seiko",
+   "model": "Elegance",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 332500,
+   "minCents": 315000,
+   "maxCents": 349999,
+   "firstDate": "2026-09-07",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -3498,6 +3923,25 @@
   {
    "brand": "Grand Seiko",
    "model": "Heritage",
+   "referenceNumber": "SBGH333",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 500785,
+   "minCents": 401669,
+   "maxCents": 599900,
+   "firstDate": "2026-09-07",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Grand Seiko",
+   "model": "Heritage",
    "referenceNumber": "SBGP017",
    "colorCombo": "blue",
    "kind": "sold",
@@ -3669,6 +4113,25 @@
   {
    "brand": "IWC",
    "model": "Pilot",
+   "referenceNumber": "IW326803",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 439924,
+   "minCents": 329848,
+   "maxCents": 550000,
+   "firstDate": "2026-09-14",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
    "referenceNumber": "IW377709",
    "colorCombo": "black",
    "kind": "sold",
@@ -3735,6 +4198,25 @@
    "maxCents": 328178,
    "firstDate": "2026-09-17",
    "lastDate": "2026-09-17",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Portofino",
+   "referenceNumber": "IW544801",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 350000,
+   "minCents": 350000,
+   "maxCents": 350000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -3874,6 +4356,25 @@
    "originIds": [
     "ebay_sold",
     "loupethis"
+   ]
+  },
+  {
+   "brand": "Jaeger-LeCoultre",
+   "model": "Polaris",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 924750,
+   "minCents": 600000,
+   "maxCents": 1249500,
+   "firstDate": "2026-09-07",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
    ]
   },
   {
@@ -4032,14 +4533,14 @@
    "brand": "Omega",
    "model": "Seamaster",
    "referenceNumber": "",
-   "colorCombo": "white",
+   "colorCombo": "black / ceramic",
    "kind": "sold",
    "n": 2,
-   "medianCents": 477000,
-   "minCents": 474500,
-   "maxCents": 479500,
+   "medianCents": 600337,
+   "minCents": 520674,
+   "maxCents": 680000,
    "firstDate": "2026-09-13",
-   "lastDate": "2026-09-13",
+   "lastDate": "2026-09-15",
    "sourceIds": [
     "own_compiled"
    ],
@@ -4049,16 +4550,54 @@
   },
   {
    "brand": "Omega",
-   "model": "Seamaster",
+   "model": "Seamaster Aqua Terra",
    "referenceNumber": "",
-   "colorCombo": "black / ceramic",
+   "colorCombo": "black",
    "kind": "sold",
    "n": 2,
-   "medianCents": 600337,
-   "minCents": 520674,
-   "maxCents": 680000,
+   "medianCents": 434375,
+   "minCents": 418750,
+   "maxCents": 450000,
+   "firstDate": "2026-09-08",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Omega",
+   "model": "Seamaster Aqua Terra",
+   "referenceNumber": "",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 638000,
+   "minCents": 476100,
+   "maxCents": 799900,
    "firstDate": "2026-09-13",
-   "lastDate": "2026-09-15",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Omega",
+   "model": "Seamaster Aqua Terra",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 407500,
+   "minCents": 365000,
+   "maxCents": 450000,
+   "firstDate": "2026-09-13",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -4353,25 +4892,6 @@
   },
   {
    "brand": "Rolex",
-   "model": "Air-King",
-   "referenceNumber": "5500",
-   "colorCombo": "silver / oyster",
-   "kind": "sold",
-   "n": 2,
-   "medianCents": 390000,
-   "minCents": 380000,
-   "maxCents": 400000,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-16",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
    "model": "Cellini",
    "referenceNumber": "4012",
    "colorCombo": "blue",
@@ -4400,6 +4920,25 @@
    "minCents": 494898,
    "maxCents": 770000,
    "firstDate": "2026-09-11",
+   "lastDate": "2026-09-11",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "116200",
+   "colorCombo": "blue / jubilee",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 875062,
+   "minCents": 775000,
+   "maxCents": 975123,
+   "firstDate": "2026-08-23",
    "lastDate": "2026-09-11",
    "sourceIds": [
     "own_compiled"
@@ -4458,6 +4997,25 @@
    "maxCents": 1260000,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "116234",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 768333,
+   "minCents": 766666,
+   "maxCents": 770000,
+   "firstDate": "2026-09-16",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -4697,25 +5255,6 @@
    "brand": "Rolex",
    "model": "Datejust",
    "referenceNumber": "16013",
-   "colorCombo": "blue",
-   "kind": "sold",
-   "n": 2,
-   "medianCents": 413500,
-   "minCents": 327500,
-   "maxCents": 499500,
-   "firstDate": "2026-09-10",
-   "lastDate": "2026-09-11",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "16013",
    "colorCombo": "jubilee",
    "kind": "sold",
    "n": 2,
@@ -4791,6 +5330,25 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "16200",
+   "colorCombo": "silver / oyster",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 494999,
+   "minCents": 419999,
+   "maxCents": 569999,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "16233",
    "colorCombo": "blue / jubilee",
    "kind": "sold",
@@ -4838,25 +5396,6 @@
    "maxCents": 999900,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-19",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "69173",
-   "colorCombo": "jubilee",
-   "kind": "sold",
-   "n": 2,
-   "medianCents": 536000,
-   "minCents": 499999,
-   "maxCents": 572000,
-   "firstDate": "2026-09-05",
-   "lastDate": "2026-09-13",
    "sourceIds": [
     "own_compiled"
    ],
@@ -5172,25 +5711,6 @@
   {
    "brand": "Rolex",
    "model": "Explorer II",
-   "referenceNumber": "216570",
-   "colorCombo": "black",
-   "kind": "sold",
-   "n": 2,
-   "medianCents": 870000,
-   "minCents": 850000,
-   "maxCents": 890000,
-   "firstDate": "2026-09-15",
-   "lastDate": "2026-09-15",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Explorer II",
    "referenceNumber": "226570",
    "colorCombo": "white",
    "kind": "sold",
@@ -5343,6 +5863,25 @@
   {
    "brand": "Rolex",
    "model": "Oyster Perpetual",
+   "referenceNumber": "116000",
+   "colorCombo": "black / oyster",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 692900,
+   "minCents": 600800,
+   "maxCents": 785000,
+   "firstDate": "2026-09-07",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
    "referenceNumber": "15200",
    "colorCombo": "black / oyster",
    "kind": "sold",
@@ -5428,25 +5967,6 @@
    "maxCents": 1012500,
    "firstDate": "2026-09-14",
    "lastDate": "2026-09-18",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Submariner",
-   "referenceNumber": "",
-   "colorCombo": "blue",
-   "kind": "sold",
-   "n": 2,
-   "medianCents": 1077500,
-   "minCents": 1025000,
-   "maxCents": 1130000,
-   "firstDate": "2026-09-12",
-   "lastDate": "2026-09-12",
    "sourceIds": [
     "own_compiled"
    ],
@@ -5561,6 +6081,25 @@
    "maxCents": 1375000,
    "firstDate": "2026-09-17",
    "lastDate": "2026-09-17",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Submariner",
+   "referenceNumber": "124060",
+   "colorCombo": "silver / oyster",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 1284950,
+   "minCents": 1170000,
+   "maxCents": 1399900,
+   "firstDate": "2026-09-15",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -5722,6 +6261,25 @@
   },
   {
    "brand": "Rolex",
+   "model": "Submariner",
+   "referenceNumber": "5513",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 2,
+   "medianCents": 702465,
+   "minCents": 458600,
+   "maxCents": 946330,
+   "firstDate": "2026-09-05",
+   "lastDate": "2026-09-07",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
    "model": "Turn-O-Graph",
    "referenceNumber": "1625",
    "colorCombo": "",
@@ -5770,6 +6328,25 @@
    "maxCents": 795000,
    "firstDate": "2026-09-11",
    "lastDate": "2026-09-11",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Audemars Piguet",
+   "model": "Jules Audemars",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 840000,
+   "minCents": 840000,
+   "maxCents": 840000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -5932,6 +6509,25 @@
   {
    "brand": "Audemars Piguet",
    "model": "Royal Oak",
+   "referenceNumber": "66010ST",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1095000,
+   "minCents": 1095000,
+   "maxCents": 1095000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Audemars Piguet",
+   "model": "Royal Oak",
    "referenceNumber": "67650ST",
    "colorCombo": "",
    "kind": "sold",
@@ -6046,6 +6642,25 @@
   {
    "brand": "Breitling",
    "model": "Aerospace",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 434428,
+   "minCents": 434428,
+   "maxCents": 434428,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Aerospace",
    "referenceNumber": "E79362",
    "colorCombo": "",
    "kind": "sold",
@@ -6074,6 +6689,25 @@
    "maxCents": 300000,
    "firstDate": "2026-09-11",
    "lastDate": "2026-09-11",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Aerospace",
+   "referenceNumber": "E79363",
+   "colorCombo": "grey",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 339995,
+   "minCents": 339995,
+   "maxCents": 339995,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -6503,14 +7137,14 @@
    "brand": "Breitling",
    "model": "Chronomat",
    "referenceNumber": "",
-   "colorCombo": "blue",
+   "colorCombo": "blue / rubber",
    "kind": "sold",
    "n": 1,
-   "medianCents": 553300,
-   "minCents": 553300,
-   "maxCents": 553300,
-   "firstDate": "2026-09-16",
-   "lastDate": "2026-09-16",
+   "medianCents": 554000,
+   "minCents": 554000,
+   "maxCents": 554000,
+   "firstDate": "2026-09-17",
+   "lastDate": "2026-09-17",
    "sourceIds": [
     "own_compiled"
    ],
@@ -6522,14 +7156,33 @@
    "brand": "Breitling",
    "model": "Chronomat",
    "referenceNumber": "",
-   "colorCombo": "blue / rubber",
+   "colorCombo": "black",
    "kind": "sold",
    "n": 1,
-   "medianCents": 554000,
-   "minCents": 554000,
-   "maxCents": 554000,
-   "firstDate": "2026-09-17",
-   "lastDate": "2026-09-17",
+   "medianCents": 390000,
+   "minCents": 390000,
+   "maxCents": 390000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Chronomat",
+   "referenceNumber": "",
+   "colorCombo": "green / rubber",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 750000,
+   "minCents": 750000,
+   "maxCents": 750000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -6655,14 +7308,14 @@
    "brand": "Breitling",
    "model": "Chronomat",
    "referenceNumber": "AB0134",
-   "colorCombo": "green",
+   "colorCombo": "",
    "kind": "sold",
    "n": 1,
-   "medianCents": 516530,
-   "minCents": 516530,
-   "maxCents": 516530,
-   "firstDate": "2026-09-17",
-   "lastDate": "2026-09-17",
+   "medianCents": 700000,
+   "minCents": 700000,
+   "maxCents": 700000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -6767,6 +7420,25 @@
   },
   {
    "brand": "Breitling",
+   "model": "Chronomat",
+   "referenceNumber": "U17356",
+   "colorCombo": "green / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 435000,
+   "minCents": 435000,
+   "maxCents": 435000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
    "model": "Colt",
    "referenceNumber": "A77387",
    "colorCombo": "mother of pearl",
@@ -6815,25 +7487,6 @@
    "maxCents": 340000,
    "firstDate": "2026-09-01",
    "lastDate": "2026-09-01",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Breitling",
-   "model": "Navitimer",
-   "referenceNumber": "",
-   "colorCombo": "black",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 390000,
-   "minCents": 390000,
-   "maxCents": 390000,
-   "firstDate": "2026-09-09",
-   "lastDate": "2026-09-09",
    "sourceIds": [
     "own_compiled"
    ],
@@ -6920,6 +7573,25 @@
   {
    "brand": "Breitling",
    "model": "Navitimer",
+   "referenceNumber": "",
+   "colorCombo": "brown / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 359550,
+   "minCents": 359550,
+   "maxCents": 359550,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
    "referenceNumber": "A12322",
    "colorCombo": "black",
    "kind": "sold",
@@ -6939,15 +7611,15 @@
   {
    "brand": "Breitling",
    "model": "Navitimer",
-   "referenceNumber": "A13322",
-   "colorCombo": "",
+   "referenceNumber": "A13022",
+   "colorCombo": "black",
    "kind": "sold",
    "n": 1,
-   "medianCents": 338984,
-   "minCents": 338984,
-   "maxCents": 338984,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-11",
+   "medianCents": 399999,
+   "minCents": 399999,
+   "maxCents": 399999,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
    "sourceIds": [
     "own_compiled"
    ],
@@ -6967,6 +7639,44 @@
    "maxCents": 328999,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "A17326",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 367593,
+   "minCents": 367593,
+   "maxCents": 367593,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "A17395",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 399500,
+   "minCents": 399500,
+   "maxCents": 399500,
+   "firstDate": "2026-08-31",
+   "lastDate": "2026-08-31",
    "sourceIds": [
     "own_compiled"
    ],
@@ -7119,6 +7829,44 @@
    "maxCents": 549500,
    "firstDate": "2026-09-19",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "D23322",
+   "colorCombo": "black / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 420000,
+   "minCents": 420000,
+   "maxCents": 420000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "H30030",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 732900,
+   "minCents": 732900,
+   "maxCents": 732900,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -7385,6 +8133,25 @@
    "maxCents": 330000,
    "firstDate": "2026-09-11",
    "lastDate": "2026-09-11",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Breitling",
+   "model": "Superocean",
+   "referenceNumber": "AB2020",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 370000,
+   "minCents": 370000,
+   "maxCents": 370000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -7737,6 +8504,25 @@
   {
    "brand": "Cartier",
    "model": "Ballon Bleu",
+   "referenceNumber": "W69016Z4",
+   "colorCombo": "silver / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 320000,
+   "minCents": 320000,
+   "maxCents": 320000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Ballon Bleu",
    "referenceNumber": "W6920032",
    "colorCombo": "mint",
    "kind": "sold",
@@ -7784,6 +8570,25 @@
    "maxCents": 488700,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Calibre de Cartier",
+   "referenceNumber": "",
+   "colorCombo": "black / rubber",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 383340,
+   "minCents": 383340,
+   "maxCents": 383340,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -7870,6 +8675,25 @@
   {
    "brand": "Cartier",
    "model": "Drive de Cartier",
+   "referenceNumber": "WSNM0004",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 488500,
+   "minCents": 488500,
+   "maxCents": 488500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Drive de Cartier",
    "referenceNumber": "WSNM0006",
    "colorCombo": "black",
    "kind": "sold",
@@ -7879,6 +8703,44 @@
    "maxCents": 400000,
    "firstDate": "2026-02-15",
    "lastDate": "2026-02-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Drive de Cartier",
+   "referenceNumber": "WSNM0006",
+   "colorCombo": "black / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 455000,
+   "minCents": 455000,
+   "maxCents": 455000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Drive de Cartier",
+   "referenceNumber": "WSNM0017",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 650000,
+   "minCents": 650000,
+   "maxCents": 650000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -8003,6 +8865,25 @@
   {
    "brand": "Cartier",
    "model": "Panth\u00e8re",
+   "referenceNumber": "",
+   "colorCombo": "gold",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 588000,
+   "minCents": 588000,
+   "maxCents": 588000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Panth\u00e8re",
    "referenceNumber": "W25028B5",
    "colorCombo": "",
    "kind": "sold",
@@ -8041,15 +8922,15 @@
   {
    "brand": "Cartier",
    "model": "Panth\u00e8re",
-   "referenceNumber": "WOMENS",
+   "referenceNumber": "W328953",
    "colorCombo": "",
    "kind": "sold",
    "n": 1,
-   "medianCents": 313839,
-   "minCents": 313839,
-   "maxCents": 313839,
-   "firstDate": "2026-09-18",
-   "lastDate": "2026-09-18",
+   "medianCents": 633900,
+   "minCents": 633900,
+   "maxCents": 633900,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -8060,15 +8941,15 @@
   {
    "brand": "Cartier",
    "model": "Panth\u00e8re",
-   "referenceNumber": "WSPN0006",
-   "colorCombo": "",
+   "referenceNumber": "WSPN0011",
+   "colorCombo": "silver",
    "kind": "sold",
    "n": 1,
-   "medianCents": 495095,
-   "minCents": 495095,
-   "maxCents": 495095,
-   "firstDate": "2026-09-13",
-   "lastDate": "2026-09-13",
+   "medianCents": 365000,
+   "minCents": 365000,
+   "maxCents": 365000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -8269,6 +9150,25 @@
   {
    "brand": "Cartier",
    "model": "Roadster",
+   "referenceNumber": "",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 450000,
+   "minCents": 450000,
+   "maxCents": 450000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Roadster",
    "referenceNumber": "2675",
    "colorCombo": "",
    "kind": "sold",
@@ -8316,6 +9216,25 @@
    "maxCents": 319226,
    "firstDate": "2026-09-10",
    "lastDate": "2026-09-10",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Roadster",
+   "referenceNumber": "W62017V3",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 309897,
+   "minCents": 309897,
+   "maxCents": 309897,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -8401,6 +9320,25 @@
   },
   {
    "brand": "Cartier",
+   "model": "Roadster",
+   "referenceNumber": "WE500160",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1175000,
+   "minCents": 1175000,
+   "maxCents": 1175000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
    "model": "Ronde",
    "referenceNumber": "",
    "colorCombo": "",
@@ -8430,6 +9368,25 @@
    "maxCents": 395000,
    "firstDate": "2026-09-16",
    "lastDate": "2026-09-16",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Ronde",
+   "referenceNumber": "W6701009",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 620000,
+   "minCents": 620000,
+   "maxCents": 620000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -8554,6 +9511,25 @@
   {
    "brand": "Cartier",
    "model": "Santos",
+   "referenceNumber": "",
+   "colorCombo": "mint",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 490000,
+   "minCents": 490000,
+   "maxCents": 490000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
    "referenceNumber": "W2001583",
    "colorCombo": "",
    "kind": "sold",
@@ -8601,6 +9577,25 @@
    "maxCents": 550000,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
+   "referenceNumber": "W20090X8",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 539500,
+   "minCents": 539500,
+   "maxCents": 539500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -8668,6 +9663,25 @@
   {
    "brand": "Cartier",
    "model": "Santos",
+   "referenceNumber": "W20126X8",
+   "colorCombo": "white / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 355000,
+   "minCents": 355000,
+   "maxCents": 355000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
    "referenceNumber": "W2020010",
    "colorCombo": "black / leather",
    "kind": "sold",
@@ -8687,6 +9701,63 @@
   {
    "brand": "Cartier",
    "model": "Santos",
+   "referenceNumber": "W25064Z5",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 399500,
+   "minCents": 399500,
+   "maxCents": 399500,
+   "firstDate": "2026-08-25",
+   "lastDate": "2026-08-25",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
+   "referenceNumber": "W327168",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 365000,
+   "minCents": 365000,
+   "maxCents": 365000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
+   "referenceNumber": "WOMENS",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 355000,
+   "minCents": 355000,
+   "maxCents": 355000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
    "referenceNumber": "WSSA0017",
    "colorCombo": "rubber",
    "kind": "sold",
@@ -8696,6 +9767,25 @@
    "maxCents": 795000,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Santos",
+   "referenceNumber": "WSSA0018",
+   "colorCombo": "mint",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 650000,
+   "minCents": 650000,
+   "maxCents": 650000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -9276,15 +10366,15 @@
   {
    "brand": "Cartier",
    "model": "Tank",
-   "referenceNumber": "WOODEN",
-   "colorCombo": "",
+   "referenceNumber": "WSTA0010",
+   "colorCombo": "blue",
    "kind": "sold",
    "n": 1,
-   "medianCents": 385000,
-   "minCents": 385000,
-   "maxCents": 385000,
-   "firstDate": "2026-09-14",
-   "lastDate": "2026-09-14",
+   "medianCents": 410000,
+   "minCents": 410000,
+   "maxCents": 410000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -9427,6 +10517,25 @@
   },
   {
    "brand": "Cartier",
+   "model": "Tank Americaine",
+   "referenceNumber": "WSTA0017",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 450730,
+   "minCents": 450730,
+   "maxCents": 450730,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
    "model": "Tank Anglaise",
    "referenceNumber": "W5310006",
    "colorCombo": "",
@@ -9456,25 +10565,6 @@
    "maxCents": 425000,
    "firstDate": "2026-09-10",
    "lastDate": "2026-09-10",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Cartier",
-   "model": "Tank Francaise",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 395000,
-   "minCents": 395000,
-   "maxCents": 395000,
-   "firstDate": "2026-03-02",
-   "lastDate": "2026-03-02",
    "sourceIds": [
     "own_compiled"
    ],
@@ -9618,25 +10708,6 @@
   {
    "brand": "Cartier",
    "model": "Tank Louis",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 658800,
-   "minCents": 658800,
-   "maxCents": 658800,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-11",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Cartier",
-   "model": "Tank Louis",
    "referenceNumber": "W1529756",
    "colorCombo": "",
    "kind": "sold",
@@ -9684,6 +10755,44 @@
    "maxCents": 420000,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank Must",
+   "referenceNumber": "W1014154",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 345000,
+   "minCents": 345000,
+   "maxCents": 345000,
+   "firstDate": "2026-09-19",
+   "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank Must",
+   "referenceNumber": "W5200005",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 309500,
+   "minCents": 309500,
+   "maxCents": 309500,
+   "firstDate": "2026-09-14",
+   "lastDate": "2026-09-14",
    "sourceIds": [
     "own_compiled"
    ],
@@ -9760,6 +10869,63 @@
    "maxCents": 459140,
    "firstDate": "2026-09-12",
    "lastDate": "2026-09-12",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank Must",
+   "referenceNumber": "WSTA0028",
+   "colorCombo": "leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 325506,
+   "minCents": 325506,
+   "maxCents": 325506,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank Must",
+   "referenceNumber": "WSTA0042",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 300000,
+   "minCents": 300000,
+   "maxCents": 300000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Cartier",
+   "model": "Tank Must",
+   "referenceNumber": "WSTA0052",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 360241,
+   "minCents": 360241,
+   "maxCents": 360241,
+   "firstDate": "2026-09-16",
+   "lastDate": "2026-09-16",
    "sourceIds": [
     "own_compiled"
    ],
@@ -9879,25 +11045,6 @@
    ],
    "originIds": [
     "loupethis"
-   ]
-  },
-  {
-   "brand": "Grand Seiko",
-   "model": "Elegance",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 315000,
-   "minCents": 315000,
-   "maxCents": 315000,
-   "firstDate": "2026-09-07",
-   "lastDate": "2026-09-07",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
    ]
   },
   {
@@ -10083,6 +11230,25 @@
    "maxCents": 1210000,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Grand Seiko",
+   "model": "Evolution 9",
+   "referenceNumber": "SLGC001",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 740000,
+   "minCents": 740000,
+   "maxCents": 740000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -10321,15 +11487,15 @@
   {
    "brand": "Grand Seiko",
    "model": "Heritage",
-   "referenceNumber": "SBGH333",
-   "colorCombo": "",
+   "referenceNumber": "SBGH343",
+   "colorCombo": "green",
    "kind": "sold",
    "n": 1,
-   "medianCents": 401669,
-   "minCents": 401669,
-   "maxCents": 401669,
-   "firstDate": "2026-09-07",
-   "lastDate": "2026-09-07",
+   "medianCents": 750000,
+   "minCents": 750000,
+   "maxCents": 750000,
+   "firstDate": "2026-09-11",
+   "lastDate": "2026-09-11",
    "sourceIds": [
     "own_compiled"
    ],
@@ -10340,15 +11506,15 @@
   {
    "brand": "Grand Seiko",
    "model": "Heritage",
-   "referenceNumber": "SBGH343",
-   "colorCombo": "green",
+   "referenceNumber": "SBGH353",
+   "colorCombo": "",
    "kind": "sold",
    "n": 1,
-   "medianCents": 750000,
-   "minCents": 750000,
-   "maxCents": 750000,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-11",
+   "medianCents": 501987,
+   "minCents": 501987,
+   "maxCents": 501987,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -10539,6 +11705,44 @@
    "maxCents": 360000,
    "firstDate": "2026-09-14",
    "lastDate": "2026-09-14",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Grand Seiko",
+   "model": "Sport",
+   "referenceNumber": "SBGE257",
+   "colorCombo": "green",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 355000,
+   "minCents": 355000,
+   "maxCents": 355000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Grand Seiko",
+   "model": "Sport",
+   "referenceNumber": "SBGE295",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 425294,
+   "minCents": 425294,
+   "maxCents": 425294,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -11042,6 +12246,25 @@
   },
   {
    "brand": "IWC",
+   "model": "Ingenieur",
+   "referenceNumber": "IW372503",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 320310,
+   "minCents": 320310,
+   "maxCents": 320310,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
    "model": "Mark",
    "referenceNumber": "",
    "colorCombo": "blue / ceramic",
@@ -11214,6 +12437,25 @@
   {
    "brand": "IWC",
    "model": "Mark",
+   "referenceNumber": "IW328205",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 412561,
+   "minCents": 412561,
+   "maxCents": 412561,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Mark",
    "referenceNumber": "IW328208",
    "colorCombo": "white",
    "kind": "sold",
@@ -11337,25 +12579,6 @@
    "maxCents": 305286,
    "firstDate": "2026-09-10",
    "lastDate": "2026-09-10",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "IWC",
-   "model": "Pilot",
-   "referenceNumber": "IW326803",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 550000,
-   "minCents": 550000,
-   "maxCents": 550000,
-   "firstDate": "2026-09-14",
-   "lastDate": "2026-09-14",
    "sourceIds": [
     "own_compiled"
    ],
@@ -11537,6 +12760,25 @@
   {
    "brand": "IWC",
    "model": "Pilot",
+   "referenceNumber": "IW371701",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 350000,
+   "minCents": 350000,
+   "maxCents": 350000,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
    "referenceNumber": "IW371705",
    "colorCombo": "silver",
    "kind": "sold",
@@ -11546,6 +12788,25 @@
    "maxCents": 375000,
    "firstDate": "2026-09-10",
    "lastDate": "2026-09-10",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
+   "referenceNumber": "IW377704",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 385000,
+   "minCents": 385000,
+   "maxCents": 385000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -11575,6 +12836,44 @@
   {
    "brand": "IWC",
    "model": "Pilot",
+   "referenceNumber": "IW377710",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 499800,
+   "minCents": 499800,
+   "maxCents": 499800,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
+   "referenceNumber": "IW377714",
+   "colorCombo": "leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 365000,
+   "minCents": 365000,
+   "maxCents": 365000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
    "referenceNumber": "IW377717",
    "colorCombo": "leather",
    "kind": "sold",
@@ -11584,6 +12883,25 @@
    "maxCents": 420000,
    "firstDate": "2026-09-06",
    "lastDate": "2026-09-06",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
+   "referenceNumber": "IW378004",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 589999,
+   "minCents": 589999,
+   "maxCents": 589999,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -11765,6 +13083,25 @@
   {
    "brand": "IWC",
    "model": "Pilot",
+   "referenceNumber": "IW500429",
+   "colorCombo": "black / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 727372,
+   "minCents": 727372,
+   "maxCents": 727372,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-22",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
    "referenceNumber": "IW501005",
    "colorCombo": "",
    "kind": "sold",
@@ -11793,6 +13130,25 @@
    "maxCents": 796926,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Pilot",
+   "referenceNumber": "IW501019",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 780000,
+   "minCents": 780000,
+   "maxCents": 780000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -11898,6 +13254,25 @@
   {
    "brand": "IWC",
    "model": "Portofino",
+   "referenceNumber": "IW391007",
+   "colorCombo": "white",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 338006,
+   "minCents": 338006,
+   "maxCents": 338006,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Portofino",
    "referenceNumber": "IW391008",
    "colorCombo": "black",
    "kind": "sold",
@@ -11945,6 +13320,44 @@
    "maxCents": 650000,
    "firstDate": "2026-09-08",
    "lastDate": "2026-09-08",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Portugieser",
+   "referenceNumber": "",
+   "colorCombo": "white",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 345000,
+   "minCents": 345000,
+   "maxCents": 345000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "IWC",
+   "model": "Portugieser",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 650000,
+   "minCents": 650000,
+   "maxCents": 650000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -12202,6 +13615,25 @@
   {
    "brand": "Jaeger-LeCoultre",
    "model": "Master",
+   "referenceNumber": "",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 500000,
+   "minCents": 500000,
+   "maxCents": 500000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Jaeger-LeCoultre",
+   "model": "Master",
    "referenceNumber": "Q1508420",
    "colorCombo": "",
    "kind": "sold",
@@ -12230,6 +13662,44 @@
    "maxCents": 487199,
    "firstDate": "2026-09-03",
    "lastDate": "2026-09-03",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Jaeger-LeCoultre",
+   "model": "Master",
+   "referenceNumber": "Q1628130",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 476476,
+   "minCents": 476476,
+   "maxCents": 476476,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Jaeger-LeCoultre",
+   "model": "Master Control",
+   "referenceNumber": "Q1392420",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 959900,
+   "minCents": 959900,
+   "maxCents": 959900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -12323,25 +13793,6 @@
    "medianCents": 452868,
    "minCents": 452868,
    "maxCents": 452868,
-   "firstDate": "2026-09-07",
-   "lastDate": "2026-09-07",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Jaeger-LeCoultre",
-   "model": "Polaris",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 600000,
-   "minCents": 600000,
-   "maxCents": 600000,
    "firstDate": "2026-09-07",
    "lastDate": "2026-09-07",
    "sourceIds": [
@@ -13133,6 +14584,25 @@
   {
    "brand": "Omega",
    "model": "Seamaster",
+   "referenceNumber": "",
+   "colorCombo": "blue / rubber",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 449500,
+   "minCents": 449500,
+   "maxCents": 449500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Omega",
+   "model": "Seamaster",
    "referenceNumber": "210.30.42.20.03.001",
    "colorCombo": "blue",
    "kind": "sold",
@@ -13400,25 +14870,6 @@
    "brand": "Omega",
    "model": "Seamaster Aqua Terra",
    "referenceNumber": "",
-   "colorCombo": "black",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 450000,
-   "minCents": 450000,
-   "maxCents": 450000,
-   "firstDate": "2026-09-08",
-   "lastDate": "2026-09-08",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Omega",
-   "model": "Seamaster Aqua Terra",
-   "referenceNumber": "",
    "colorCombo": "blue / rubber",
    "kind": "sold",
    "n": 1,
@@ -13427,44 +14878,6 @@
    "maxCents": 400000,
    "firstDate": "2026-09-09",
    "lastDate": "2026-09-09",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Omega",
-   "model": "Seamaster Aqua Terra",
-   "referenceNumber": "",
-   "colorCombo": "blue",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 476100,
-   "minCents": 476100,
-   "maxCents": 476100,
-   "firstDate": "2026-09-13",
-   "lastDate": "2026-09-13",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Omega",
-   "model": "Seamaster Aqua Terra",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 450000,
-   "minCents": 450000,
-   "maxCents": 450000,
-   "firstDate": "2026-09-13",
-   "lastDate": "2026-09-13",
    "sourceIds": [
     "own_compiled"
    ],
@@ -13503,6 +14916,25 @@
    "maxCents": 435338,
    "firstDate": "2026-09-20",
    "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Omega",
+   "model": "Seamaster Aqua Terra",
+   "referenceNumber": "",
+   "colorCombo": "white",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 469500,
+   "minCents": 469500,
+   "maxCents": 469500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -15793,6 +17225,25 @@
   {
    "brand": "Patek Philippe",
    "model": "Calatrava",
+   "referenceNumber": "2484",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1000000,
+   "minCents": 1000000,
+   "maxCents": 1000000,
+   "firstDate": "2026-09-09",
+   "lastDate": "2026-09-09",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Patek Philippe",
+   "model": "Calatrava",
    "referenceNumber": "2581",
    "colorCombo": "",
    "kind": "sold",
@@ -16610,6 +18061,44 @@
   {
    "brand": "Rolex",
    "model": "Air-King",
+   "referenceNumber": "14000",
+   "colorCombo": "white / smooth / oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 464503,
+   "minCents": 464503,
+   "maxCents": 464503,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Air-King",
+   "referenceNumber": "14000M",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 607616,
+   "minCents": 607616,
+   "maxCents": 607616,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Air-King",
    "referenceNumber": "14010",
    "colorCombo": "black / oyster",
    "kind": "sold",
@@ -16657,6 +18146,25 @@
    "maxCents": 489900,
    "firstDate": "2026-09-19",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Air-King",
+   "referenceNumber": "14010M",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 387643,
+   "minCents": 387643,
+   "maxCents": 387643,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -16819,6 +18327,25 @@
   {
    "brand": "Rolex",
    "model": "Cellini",
+   "referenceNumber": "4243",
+   "colorCombo": "white",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 730000,
+   "minCents": 730000,
+   "maxCents": 730000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Cellini",
    "referenceNumber": "5115",
    "colorCombo": "leather",
    "kind": "sold",
@@ -16828,6 +18355,25 @@
    "maxCents": 712144,
    "firstDate": "2026-09-19",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Cellini",
+   "referenceNumber": "6111",
+   "colorCombo": "white / leather",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 320310,
+   "minCents": 320310,
+   "maxCents": 320310,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -17465,15 +19011,72 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
-   "referenceNumber": "116200",
-   "colorCombo": "white / oyster",
+   "referenceNumber": "",
+   "colorCombo": "blue / fluted",
    "kind": "sold",
    "n": 1,
-   "medianCents": 675000,
-   "minCents": 675000,
-   "maxCents": 675000,
-   "firstDate": "2026-09-06",
-   "lastDate": "2026-09-06",
+   "medianCents": 653300,
+   "minCents": 653300,
+   "maxCents": 653300,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "",
+   "colorCombo": "mint / fluted / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1499500,
+   "minCents": 1499500,
+   "maxCents": 1499500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "",
+   "colorCombo": "champagne / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 351000,
+   "minCents": 351000,
+   "maxCents": 351000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "",
+   "colorCombo": "mother of pearl / oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 367593,
+   "minCents": 367593,
+   "maxCents": 367593,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
    "sourceIds": [
     "own_compiled"
    ],
@@ -17485,14 +19088,14 @@
    "brand": "Rolex",
    "model": "Datejust",
    "referenceNumber": "116200",
-   "colorCombo": "blue / jubilee",
+   "colorCombo": "white / oyster",
    "kind": "sold",
    "n": 1,
-   "medianCents": 775000,
-   "minCents": 775000,
-   "maxCents": 775000,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-11",
+   "medianCents": 675000,
+   "minCents": 675000,
+   "maxCents": 675000,
+   "firstDate": "2026-09-06",
+   "lastDate": "2026-09-06",
    "sourceIds": [
     "own_compiled"
    ],
@@ -17531,6 +19134,25 @@
    "maxCents": 1499900,
    "firstDate": "2026-09-12",
    "lastDate": "2026-09-12",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "116201",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 790000,
+   "minCents": 790000,
+   "maxCents": 790000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -17626,25 +19248,6 @@
    "maxCents": 831373,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "116234",
-   "colorCombo": "",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 766666,
-   "minCents": 766666,
-   "maxCents": 766666,
-   "firstDate": "2026-09-16",
-   "lastDate": "2026-09-16",
    "sourceIds": [
     "own_compiled"
    ],
@@ -17826,6 +19429,44 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "126233",
+   "colorCombo": "silver / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1499500,
+   "minCents": 1499500,
+   "maxCents": 1499500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "126234",
+   "colorCombo": "blue / fluted / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1299000,
+   "minCents": 1299000,
+   "maxCents": 1299000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "126300",
    "colorCombo": "smooth / oyster",
    "kind": "sold",
@@ -17930,6 +19571,25 @@
    "maxCents": 1149900,
    "firstDate": "2026-09-19",
    "lastDate": "2026-09-19",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "126300",
+   "colorCombo": "oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1000000,
+   "minCents": 1000000,
+   "maxCents": 1000000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -18377,6 +20037,44 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "1601",
+   "colorCombo": "silver / fluted / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 498000,
+   "minCents": 498000,
+   "maxCents": 498000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "1601",
+   "colorCombo": "grey",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 459900,
+   "minCents": 459900,
+   "maxCents": 459900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "16013",
    "colorCombo": "champagne / oyster",
    "kind": "sold",
@@ -18462,6 +20160,25 @@
    "maxCents": 365000,
    "firstDate": "2026-09-18",
    "lastDate": "2026-09-18",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "16013",
+   "colorCombo": "blue / fluted / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 722000,
+   "minCents": 722000,
+   "maxCents": 722000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -18758,25 +20475,6 @@
    "brand": "Rolex",
    "model": "Datejust",
    "referenceNumber": "16200",
-   "colorCombo": "silver / oyster",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 569999,
-   "minCents": 569999,
-   "maxCents": 569999,
-   "firstDate": "2026-09-11",
-   "lastDate": "2026-09-11",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "16200",
    "colorCombo": "white",
    "kind": "sold",
    "n": 1,
@@ -18861,6 +20559,25 @@
    "maxCents": 679500,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "16220",
+   "colorCombo": "tapestry / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 589999,
+   "minCents": 589999,
+   "maxCents": 589999,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -19070,6 +20787,25 @@
    "maxCents": 595000,
    "firstDate": "2026-09-07",
    "lastDate": "2026-09-07",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "16234",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 679995,
+   "minCents": 679995,
+   "maxCents": 679995,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -19612,6 +21348,25 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "6917",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1191300,
+   "minCents": 1191300,
+   "maxCents": 1191300,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "69173",
    "colorCombo": "pink",
    "kind": "sold",
@@ -19726,6 +21481,63 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "champagne / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 529500,
+   "minCents": 529500,
+   "maxCents": 529500,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 416900,
+   "minCents": 416900,
+   "maxCents": 416900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "black / fluted / oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 469900,
+   "minCents": 469900,
+   "maxCents": 469900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "69174",
    "colorCombo": "silver / fluted",
    "kind": "sold",
@@ -19802,6 +21614,25 @@
   {
    "brand": "Rolex",
    "model": "Datejust",
+   "referenceNumber": "69174",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 509000,
+   "minCents": 509000,
+   "maxCents": 509000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
    "referenceNumber": "69178",
    "colorCombo": "blue / president",
    "kind": "sold",
@@ -19811,6 +21642,44 @@
    "maxCents": 1309500,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69178",
+   "colorCombo": "black",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1295800,
+   "minCents": 1295800,
+   "maxCents": 1295800,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69278",
+   "colorCombo": "champagne / president",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1039375,
+   "minCents": 1039375,
+   "maxCents": 1039375,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -20296,6 +22165,25 @@
   {
    "brand": "Rolex",
    "model": "Explorer",
+   "referenceNumber": "124273",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 850000,
+   "minCents": 850000,
+   "maxCents": 850000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Explorer",
    "referenceNumber": "14270",
    "colorCombo": "",
    "kind": "sold",
@@ -20695,6 +22583,25 @@
   {
    "brand": "Rolex",
    "model": "GMT-Master II",
+   "referenceNumber": "",
+   "colorCombo": "silver / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 700000,
+   "minCents": 700000,
+   "maxCents": 700000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "GMT-Master II",
    "referenceNumber": "116710LN",
    "colorCombo": "silver / oyster",
    "kind": "sold",
@@ -20827,6 +22734,44 @@
   },
   {
    "brand": "Rolex",
+   "model": "GMT-Master II",
+   "referenceNumber": "16713",
+   "colorCombo": "jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1099900,
+   "minCents": 1099900,
+   "maxCents": 1099900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "GMT-Master II",
+   "referenceNumber": "16713LN",
+   "colorCombo": "",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1049900,
+   "minCents": 1049900,
+   "maxCents": 1049900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
    "model": "Lady-Datejust",
    "referenceNumber": "",
    "colorCombo": "",
@@ -20856,6 +22801,25 @@
    "maxCents": 372800,
    "firstDate": "2026-09-13",
    "lastDate": "2026-09-13",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Lady-Datejust",
+   "referenceNumber": "179173",
+   "colorCombo": "white / jubilee",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 990000,
+   "minCents": 990000,
+   "maxCents": 990000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -21189,6 +23153,25 @@
   {
    "brand": "Rolex",
    "model": "Oyster Perpetual",
+   "referenceNumber": "1002",
+   "colorCombo": "blue / oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 455000,
+   "minCents": 455000,
+   "maxCents": 455000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
    "referenceNumber": "1013",
    "colorCombo": "",
    "kind": "sold",
@@ -21246,25 +23229,6 @@
   {
    "brand": "Rolex",
    "model": "Oyster Perpetual",
-   "referenceNumber": "116000",
-   "colorCombo": "black / oyster",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 600800,
-   "minCents": 600800,
-   "maxCents": 600800,
-   "firstDate": "2026-09-07",
-   "lastDate": "2026-09-07",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Oyster Perpetual",
    "referenceNumber": "124200",
    "colorCombo": "blue / oyster",
    "kind": "sold",
@@ -21293,6 +23257,25 @@
    "maxCents": 1089900,
    "firstDate": "2026-09-07",
    "lastDate": "2026-09-07",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
+   "referenceNumber": "124300",
+   "colorCombo": "silver / oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 795000,
+   "minCents": 795000,
+   "maxCents": 795000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -21407,25 +23390,6 @@
    "maxCents": 1160705,
    "firstDate": "2026-09-19",
    "lastDate": "2026-09-19",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Oyster Perpetual",
-   "referenceNumber": "1500",
-   "colorCombo": "oyster",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 399900,
-   "minCents": 399900,
-   "maxCents": 399900,
-   "firstDate": "2026-09-15",
-   "lastDate": "2026-09-15",
    "sourceIds": [
     "own_compiled"
    ],
@@ -21702,6 +23666,25 @@
   {
    "brand": "Rolex",
    "model": "Oyster Perpetual",
+   "referenceNumber": "17000",
+   "colorCombo": "white",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 400000,
+   "minCents": 400000,
+   "maxCents": 400000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
    "referenceNumber": "176200",
    "colorCombo": "oyster",
    "kind": "sold",
@@ -21711,6 +23694,25 @@
    "maxCents": 427920,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
+   "referenceNumber": "176200",
+   "colorCombo": "salmon / oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 363900,
+   "minCents": 363900,
+   "maxCents": 363900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -21911,6 +23913,25 @@
   {
    "brand": "Rolex",
    "model": "Oyster Perpetual",
+   "referenceNumber": "6616",
+   "colorCombo": "oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 470000,
+   "minCents": 470000,
+   "maxCents": 470000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oyster Perpetual",
    "referenceNumber": "6618",
    "colorCombo": "pink / oyster",
    "kind": "sold",
@@ -22081,6 +24102,25 @@
   },
   {
    "brand": "Rolex",
+   "model": "Oyster Perpetual",
+   "referenceNumber": "76193",
+   "colorCombo": "oyster",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 414377,
+   "minCents": 414377,
+   "maxCents": 414377,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
    "model": "Oyster Perpetual 41",
    "referenceNumber": "124300",
    "colorCombo": "green",
@@ -22186,6 +24226,25 @@
    "maxCents": 300000,
    "firstDate": "2026-09-08",
    "lastDate": "2026-09-08",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Oysterdate",
+   "referenceNumber": "",
+   "colorCombo": "silver",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 380000,
+   "minCents": 380000,
+   "maxCents": 380000,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -22557,6 +24616,25 @@
   {
    "brand": "Rolex",
    "model": "Sea-Dweller",
+   "referenceNumber": "126660",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1381533,
+   "minCents": 1381533,
+   "maxCents": 1381533,
+   "firstDate": "2026-09-20",
+   "lastDate": "2026-09-20",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Sea-Dweller",
    "referenceNumber": "136660",
    "colorCombo": "",
    "kind": "sold",
@@ -22728,6 +24806,25 @@
   {
    "brand": "Rolex",
    "model": "Submariner",
+   "referenceNumber": "116613",
+   "colorCombo": "blue",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1419141,
+   "minCents": 1419141,
+   "maxCents": 1419141,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Submariner",
    "referenceNumber": "116613LB",
    "colorCombo": "blue / oyster",
    "kind": "sold",
@@ -22773,25 +24870,6 @@
    "medianCents": 1180000,
    "minCents": 1180000,
    "maxCents": 1180000,
-   "firstDate": "2026-09-15",
-   "lastDate": "2026-09-15",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "ebay_sold"
-   ]
-  },
-  {
-   "brand": "Rolex",
-   "model": "Submariner",
-   "referenceNumber": "124060",
-   "colorCombo": "silver / oyster",
-   "kind": "sold",
-   "n": 1,
-   "medianCents": 1399900,
-   "minCents": 1399900,
-   "maxCents": 1399900,
    "firstDate": "2026-09-15",
    "lastDate": "2026-09-15",
    "sourceIds": [
@@ -22851,6 +24929,25 @@
    "maxCents": 1410000,
    "firstDate": "2026-09-04",
    "lastDate": "2026-09-04",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "ebay_sold"
+   ]
+  },
+  {
+   "brand": "Rolex",
+   "model": "Submariner",
+   "referenceNumber": "126610LV",
+   "colorCombo": "green / ceramic",
+   "kind": "sold",
+   "n": 1,
+   "medianCents": 1489900,
+   "minCents": 1489900,
+   "maxCents": 1489900,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
@@ -23184,15 +25281,15 @@
   {
    "brand": "Rolex",
    "model": "Submariner",
-   "referenceNumber": "5513",
-   "colorCombo": "",
+   "referenceNumber": "7016",
+   "colorCombo": "blue",
    "kind": "sold",
    "n": 1,
-   "medianCents": 946330,
-   "minCents": 946330,
-   "maxCents": 946330,
-   "firstDate": "2026-09-07",
-   "lastDate": "2026-09-07",
+   "medianCents": 620000,
+   "minCents": 620000,
+   "maxCents": 620000,
+   "firstDate": "2026-09-19",
+   "lastDate": "2026-09-19",
    "sourceIds": [
     "own_compiled"
    ],
@@ -23204,14 +25301,14 @@
    "brand": "Rolex",
    "model": "Submariner",
    "referenceNumber": "7016",
-   "colorCombo": "blue",
+   "colorCombo": "",
    "kind": "sold",
    "n": 1,
-   "medianCents": 620000,
-   "minCents": 620000,
-   "maxCents": 620000,
-   "firstDate": "2026-09-19",
-   "lastDate": "2026-09-19",
+   "medianCents": 398200,
+   "minCents": 398200,
+   "maxCents": 398200,
+   "firstDate": "2026-09-21",
+   "lastDate": "2026-09-21",
    "sourceIds": [
     "own_compiled"
    ],
