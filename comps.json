@@ -1,7 +1,7 @@
 {
  "schemaVersion": 2,
- "snapshotDate": "2026-09-23",
- "generatedAt": "2026-09-23T10:20:02Z",
+ "snapshotDate": "2026-09-24",
+ "generatedAt": "2026-09-24T10:20:00Z",
  "provenance": "Derived aggregate snapshot. Each entry is a reference level statistic (count, median, range, date span) computed by us from our own compiled record of sold and asking observations, not individual listing rows. Refreshed nightly by refresh_comps.py and served from our own static host. Displayed figures carry no third party attribution.",
  "displayDecision": "The displayed aggregates are our own compiled record, shown as our own derived statistics under Christopher's 2026-09-17 directive to ship comps from what we hold. Direct eBay sold-data access is an application in progress. No eBay attributed statistic is displayed.",
  "sources": [
@@ -9,7 +9,7 @@
    "id": "own_compiled",
    "label": "our own compiled sold and asking observations",
    "status": "ok",
-   "asOf": "2026-09-23",
+   "asOf": "2026-09-24",
    "note": "derived aggregates only, computed by us from our own compiled record of sold and asking observations. No listing rows, titles, images, sellers or per item URLs are stored or shown.",
    "terms": "our own compiled record, derived statistics only"
   },
@@ -17,7 +17,7 @@
    "id": "ebay_sold",
    "label": "eBay sold and completed listings (upstream origin)",
    "status": "blocked",
-   "asOf": "2026-09-23",
+   "asOf": "2026-09-24",
    "note": "an upstream origin for part of our compilation, not a display source: direct programmatic access is an application in progress (Marketplace Insights), and we do not display eBay rows or eBay-attributed statistics. Our compiled aggregate is shown instead.",
    "terms": "derived aggregates from our own compiled record; no eBay attribution on any displayed figure"
   },
@@ -25,7 +25,7 @@
    "id": "watchcharts",
    "label": "WatchCharts market price",
    "status": "blocked",
-   "asOf": "2026-09-23",
+   "asOf": "2026-09-24",
    "note": "not included in this snapshot; a distribution licence is required and is a paid decision",
    "terms": "licence required to display"
   },
@@ -33,7 +33,7 @@
    "id": "chrono24",
    "label": "Chrono24 US and global asks (upstream origin)",
    "status": "blocked",
-   "asOf": "2026-09-23",
+   "asOf": "2026-09-24",
    "note": "an upstream origin for part of our own observed asks, not a display source: terms do not permit commercial display of their rows. Only our own compiled aggregate is shown.",
    "terms": "derived aggregates from our own compiled record; no Chrono24 attribution on any displayed figure"
   },
@@ -41,7 +41,7 @@
    "id": "everywatch",
    "label": "EveryWatch auction sales",
    "status": "stale",
-   "asOf": "2026-09-23",
+   "asOf": "2026-09-24",
    "note": "no auction sales inside this window",
    "terms": "derived statistics only, attributed"
   }
@@ -58,7 +58,7 @@
    "minCents": 248900,
    "maxCents": 1759000,
    "firstDate": "2026-09-14",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -100,7 +100,7 @@
    "minCents": 549000,
    "maxCents": 1190000,
    "firstDate": "2026-09-11",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -121,7 +121,7 @@
    "minCents": 380200,
    "maxCents": 2365000,
    "firstDate": "2026-09-14",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -157,12 +157,12 @@
    "referenceNumber": "",
    "colorCombo": "black",
    "kind": "asking",
-   "n": 37,
-   "medianCents": 1299500,
+   "n": 39,
+   "medianCents": 1349500,
    "minCents": 916400,
    "maxCents": 2319500,
    "firstDate": "2026-09-19",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -183,7 +183,7 @@
    "minCents": 650000,
    "maxCents": 990000,
    "firstDate": "2026-09-07",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -204,7 +204,7 @@
    "minCents": 200000,
    "maxCents": 699500,
    "firstDate": "2026-09-14",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -356,6 +356,28 @@
    ]
   },
   {
+   "brand": "Breitling",
+   "model": "Navitimer",
+   "referenceNumber": "",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 15,
+   "medianCents": 559500,
+   "minCents": 200000,
+   "maxCents": 1599500,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-23",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24",
+    "europeanwatch",
+    "reddit"
+   ]
+  },
+  {
    "brand": "Cartier",
    "model": "Santos",
    "referenceNumber": "",
@@ -470,27 +492,6 @@
    ]
   },
   {
-   "brand": "Breitling",
-   "model": "Navitimer",
-   "referenceNumber": "",
-   "colorCombo": "",
-   "kind": "asking",
-   "n": 14,
-   "medianCents": 579500,
-   "minCents": 200000,
-   "maxCents": 1599500,
-   "firstDate": "2026-09-22",
-   "lastDate": "2026-09-22",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "bobswatches",
-    "chrono24",
-    "europeanwatch"
-   ]
-  },
-  {
    "brand": "Rolex",
    "model": "GMT-Master II",
    "referenceNumber": "116713LN",
@@ -560,7 +561,7 @@
    "minCents": 200100,
    "maxCents": 449500,
    "firstDate": "2026-09-18",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -648,6 +649,27 @@
   },
   {
    "brand": "Rolex",
+   "model": "Datejust",
+   "referenceNumber": "69173",
+   "colorCombo": "",
+   "kind": "asking",
+   "n": 6,
+   "medianCents": 518950,
+   "minCents": 406300,
+   "maxCents": 685000,
+   "firstDate": "2026-09-22",
+   "lastDate": "2026-09-23",
+   "sourceIds": [
+    "own_compiled"
+   ],
+   "originIds": [
+    "bobswatches",
+    "chrono24",
+    "europeanwatch"
+   ]
+  },
+  {
+   "brand": "Rolex",
    "model": "Submariner",
    "referenceNumber": "",
    "colorCombo": "blue",
@@ -657,7 +679,7 @@
    "minCents": 878300,
    "maxCents": 1699500,
    "firstDate": "2026-09-22",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -667,17 +689,17 @@
    ]
   },
   {
-   "brand": "Rolex",
-   "model": "Datejust",
-   "referenceNumber": "69173",
-   "colorCombo": "",
+   "brand": "Omega",
+   "model": "Seamaster Planet Ocean",
+   "referenceNumber": "",
+   "colorCombo": "black",
    "kind": "asking",
    "n": 4,
-   "medianCents": 429200,
-   "minCents": 406300,
+   "medianCents": 559500,
+   "minCents": 277900,
    "maxCents": 599500,
    "firstDate": "2026-09-22",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
@@ -697,27 +719,7 @@
    "minCents": 719200,
    "maxCents": 1029500,
    "firstDate": "2026-09-22",
-   "lastDate": "2026-09-22",
-   "sourceIds": [
-    "own_compiled"
-   ],
-   "originIds": [
-    "bobswatches",
-    "chrono24"
-   ]
-  },
-  {
-   "brand": "Omega",
-   "model": "Seamaster Planet Ocean",
-   "referenceNumber": "",
-   "colorCombo": "black",
-   "kind": "asking",
-   "n": 2,
-   "medianCents": 438700,
-   "minCents": 277900,
-   "maxCents": 599500,
-   "firstDate": "2026-09-22",
-   "lastDate": "2026-09-22",
+   "lastDate": "2026-09-23",
    "sourceIds": [
     "own_compiled"
    ],
